@@ -38,8 +38,10 @@
         .hover-card { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
         .hover-card:hover { transform: translateY(-8px); }
         
+        /* Mobile specific spacing fix */
         @media (max-width: 768px) {
-            #pricing { padding-bottom: 100px !important; }
+            #pricing { padding-bottom: 120px !important; }
+            .pricing-card { margin-bottom: 2rem; }
         }
     </style>
 </head>
@@ -87,34 +89,34 @@
             <h2 class="text-3xl md:text-4xl font-extrabold mb-4">Transparent Pricing</h2>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div class="glass-card p-8 rounded-[2.5rem] flex flex-col hover-card">
+            <div class="pricing-card glass-card p-8 rounded-[2.5rem] flex flex-col hover-card">
                 <h3 class="text-xl font-bold mb-2">The Essential</h3>
                 <div class="text-4xl font-black my-6">₹4,999</div>
                 <ul class="space-y-4 text-sm mb-8 flex-grow">
                     <li><i class="fa-solid fa-check text-blue-600 mr-2"></i> Custom Portfolio Design</li>
                     <li><i class="fa-solid fa-check text-blue-600 mr-2"></i> GitHub Permanent Hosting</li>
                 </ul>
-                <a href="https://wa.me/917560803013?text=Hi%20Sreehari,%20I'm%20interested%20in%20The%20Essential%20package%20for%20₹4,999." class="w-full py-3 rounded-xl border border-blue-600 text-blue-600 font-bold text-center">Get Started</a>
+                <a href="https://wa.me/917560803013?text=Hi%20Sreehari%2C%20I%20am%20interested%20in%20the%20Essential%20Package%20for%204999." class="w-full py-3 rounded-xl border border-blue-600 text-blue-600 font-bold text-center">Get Started</a>
             </div>
-            <div class="bg-slate-900 dark:bg-blue-600 p-8 rounded-[2.5rem] flex flex-col transform md:scale-105 shadow-2xl text-white relative">
+            <div class="pricing-card bg-slate-900 dark:bg-blue-600 p-8 rounded-[2.5rem] flex flex-col transform md:scale-105 shadow-2xl text-white relative">
                 <div class="absolute top-0 right-10 -translate-y-1/2 bg-teal-400 text-slate-900 text-[10px] font-black px-4 py-1 rounded-full uppercase">Popular</div>
-                <h3 class="text-xl font-bold mb-2">Growth Suite</h3>
+                <h3 class="text-xl font-bold mb-2 text-white">Growth Suite</h3>
                 <div class="text-4xl font-black my-6">₹9,999</div>
                 <ul class="space-y-4 text-sm mb-8 flex-grow">
                     <li><i class="fa-solid fa-check text-teal-300 mr-2"></i> Everything in Essential</li>
                     <li><i class="fa-solid fa-check text-teal-300 mr-2"></i> GA4 & GTM Setup</li>
                     <li><i class="fa-solid fa-check text-teal-300 mr-2"></i> Meta Pixel Integration</li>
                 </ul>
-                <a href="https://wa.me/917560803013?text=Hi%20Sreehari,%20I'm%20interested%20in%20the%20Growth%20Suite%20package." class="w-full py-3 rounded-xl bg-white text-blue-600 font-bold text-center">Start Growing</a>
+                <a href="https://wa.me/917560803013?text=Hi%20Sreehari%2C%20I%20am%20interested%20in%20the%20Growth%20Suite%20Package%20for%209999." class="w-full py-3 rounded-xl bg-white text-blue-600 font-bold text-center">Start Growing</a>
             </div>
-            <div class="glass-card p-8 rounded-[2.5rem] flex flex-col hover-card">
+            <div class="pricing-card glass-card p-8 rounded-[2.5rem] flex flex-col hover-card">
                 <h3 class="text-xl font-bold mb-2">Performance Plus</h3>
-                <div class="text-4xl font-black my-6">Custom</div>
+                <div class="text-4xl font-black my-6 text-slate-900 dark:text-white">Custom</div>
                 <ul class="space-y-4 text-sm mb-8 flex-grow">
                     <li><i class="fa-solid fa-check text-blue-600 mr-2"></i> Everything in Growth</li>
                     <li><i class="fa-solid fa-check text-blue-600 mr-2"></i> Ads Strategy & Audit</li>
                 </ul>
-                <a href="https://wa.me/917560803013?text=Hi%20Sreehari,%20I'd%20like%20to%20discuss%20the%20Custom%20Performance%20package." class="w-full py-4 rounded-xl bg-slate-900 dark:bg-slate-100 text-white dark:text-slate-900 font-extrabold text-center block shadow-lg">Contact Us</a>
+                <a href="https://wa.me/917560803013?text=Hi%20Sreehari%2C%20I%20would%20like%20to%20discuss%20the%20Custom%20Performance%20Plus%20package." class="w-full py-4 rounded-xl bg-slate-900 dark:bg-slate-100 text-white dark:text-slate-900 font-extrabold text-center block shadow-lg">Contact Us</a>
             </div>
         </div>
     </section>
@@ -153,7 +155,7 @@
 
     <footer class="py-10 text-center border-t border-slate-100 dark:border-slate-800">
         <p class="text-slate-400 text-xs font-bold uppercase tracking-widest mb-6">&copy; 2026 Sreehari • Digital Growth Partner</p>
-        <a href="https://wa.me/917560803013?text=Hi%20Sreehari,%20I've%20seen%20your%20full%20site%20and%20want%20to%20get%20started." class="bg-slate-900 dark:bg-blue-600 text-white px-8 py-3 rounded-xl font-bold">Contact Sreehari</a>
+        <a href="https://wa.me/917560803013?text=Hi%20Sreehari%2C%20I%20want%20to%20get%20started%20with%20your%20services." class="bg-slate-900 dark:bg-blue-600 text-white px-8 py-3 rounded-xl font-bold">Contact Sreehari</a>
     </footer>
 
     <script>
