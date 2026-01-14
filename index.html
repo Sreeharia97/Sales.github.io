@@ -3,13 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professional Portfolios & Digital Growth | Sreehari</title>
+    <title>Sreehari | Professional Portfolios & Digital Growth</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
     
     <script>
-        // Theme Management
         if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
             document.documentElement.classList.add('dark')
         } else {
@@ -39,17 +38,17 @@
         .hover-card { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
         .hover-card:hover { transform: translateY(-8px); }
         
-        /* Mobile specific layout fixes */
         @media (max-width: 768px) {
-            #pricing { padding-bottom: 120px !important; }
-            .pricing-card { margin-bottom: 2.5rem; }
+            #pricing { padding-top: 60px !important; padding-bottom: 120px !important; }
+            .pricing-card { margin-bottom: 3.5rem; }
+            h2 { letter-spacing: -0.025em; }
         }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-900 transition-colors duration-300">
 
     <nav class="fixed top-0 w-full z-50 px-3 md:px-6 py-4 md:py-6">
-        <div class="max-w-5xl mx-auto flex justify-between items-center glass-card px-2 py-2 rounded-2xl shadow-xl border border-white/20">
+        <div class="max-w-5xl mx-auto flex justify-between items-center glass-card px-2 py-2 rounded-2xl shadow-xl border border-white/10">
             <div class="hidden sm:flex pl-3">
                 <div class="w-8 h-8 bg-gradient-to-tr from-blue-600 to-teal-400 rounded-lg flex items-center justify-center">
                     <i class="fa-solid fa-bolt text-white text-xs"></i>
@@ -70,14 +69,15 @@
         </div>
     </nav>
 
-    <section class="pt-40 md:pt-48 pb-20 px-6">
+    <section class="pt-40 md:pt-56 pb-20 px-6">
         <div class="max-w-4xl mx-auto text-center">
-            <h1 class="text-4xl md:text-7xl font-extrabold tracking-tight mb-8 leading-[1.1]">
+            <span class="px-4 py-1.5 rounded-full bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 text-[10px] font-bold uppercase tracking-widest mb-6 inline-block">Managed Digital Portfolios</span>
+            <h1 class="text-4xl md:text-7xl font-extrabold tracking-tight mb-8 leading-[1.1] text-slate-900 dark:text-white">
                 Build a Digital Asset, <br>
                 <span class="gradient-text">Not a Monthly Expense.</span>
             </h1>
             <p class="text-lg md:text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto leading-relaxed">
-                High-performance portfolios and marketing systems built by an enterprise expert. Stop paying for hosting; start building your asset.
+                Enterprise-grade strategy and high-performance builds. I deploy your site on permanent infrastructure with zero recurring hosting costs.
             </p>
             <div class="mt-10">
                 <a href="#pricing" class="bg-blue-600 text-white px-10 py-4 rounded-2xl font-bold text-lg shadow-xl hover:bg-blue-700 transition-all inline-block">View Packages</a>
@@ -85,30 +85,30 @@
         </div>
     </section>
 
-    <section id="pricing" class="max-w-6xl mx-auto px-6 py-20 overflow-visible">
-        <div class="text-center mb-16">
-            <h2 class="text-3xl md:text-4xl font-extrabold mb-4 text-slate-900 dark:text-white">Transparent Pricing</h2>
-            <p class="text-slate-500">Managed digital solutions with zero hosting overhead.</p>
+    <section id="pricing" class="max-w-6xl mx-auto px-6 py-20 overflow-visible relative">
+        <div class="text-center mb-16 relative z-10">
+            <h2 class="text-3xl md:text-4xl font-extrabold mb-4 text-slate-900 dark:text-blue-50 drop-shadow-sm">Transparent Pricing</h2>
+            <p class="text-slate-500 dark:text-slate-400">Professional management without the "hosting tax."</p>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div class="pricing-card glass-card p-8 rounded-[2.5rem] flex flex-col hover-card">
                 <h3 class="text-xl font-bold mb-2">The Essential</h3>
                 <div class="text-4xl font-black my-6">₹4,999</div>
                 <ul class="space-y-4 text-sm mb-8 flex-grow">
-                    <li><i class="fa-solid fa-check text-blue-600 mr-2"></i> Custom Managed Portfolio</li>
-                    <li><i class="fa-solid fa-check text-blue-600 mr-2"></i> Permanent GitHub Infrastructure</li>
-                    <li><i class="fa-solid fa-check text-blue-600 mr-2"></i> Technical Troubleshooting</li>
+                    <li><i class="fa-solid fa-check text-blue-600 mr-2"></i> Managed Portfolio Build</li>
+                    <li><i class="fa-solid fa-check text-blue-600 mr-2"></i> Permanent Infrastructure</li>
+                    <li><i class="fa-solid fa-check text-blue-600 mr-2"></i> Technical Maintenance</li>
                 </ul>
                 <a href="https://wa.me/917560803013?text=Hi%20Sreehari%2C%20I%20am%20interested%20in%20the%20Essential%20Package%20for%204999." class="w-full py-3 rounded-xl border border-blue-600 text-blue-600 font-bold text-center hover:bg-blue-600 hover:text-white transition-all">Get Started</a>
             </div>
             <div class="pricing-card bg-slate-900 dark:bg-blue-600 p-8 rounded-[2.5rem] flex flex-col transform md:scale-105 shadow-2xl text-white relative">
-                <div class="absolute top-0 right-10 -translate-y-1/2 bg-teal-400 text-slate-900 text-[10px] font-black px-4 py-1 rounded-full uppercase">Most Selected</div>
+                <div class="absolute top-0 right-10 -translate-y-1/2 bg-teal-400 text-slate-900 text-[10px] font-black px-4 py-1 rounded-full uppercase">Best Value</div>
                 <h3 class="text-xl font-bold mb-2 text-white">Growth Suite</h3>
                 <div class="text-4xl font-black my-6">₹9,999</div>
-                <ul class="space-y-4 text-sm mb-8 flex-grow">
+                <ul class="space-y-4 text-sm mb-8 flex-grow text-blue-50">
                     <li><i class="fa-solid fa-check text-teal-300 mr-2"></i> Everything in Essential</li>
-                    <li><i class="fa-solid fa-check text-teal-300 mr-2"></i> Priority Support & Updates</li>
                     <li><i class="fa-solid fa-check text-teal-300 mr-2"></i> GA4 & Meta Pixel Setup</li>
+                    <li><i class="fa-solid fa-check text-teal-300 mr-2"></i> Priority Support Retainer</li>
                 </ul>
                 <a href="https://wa.me/917560803013?text=Hi%20Sreehari%2C%20I%20am%20interested%20in%20the%20Growth%20Suite%20Package%20for%209999." class="w-full py-3 rounded-xl bg-white text-blue-600 font-bold text-center hover:shadow-lg transition-all">Start Growing</a>
             </div>
@@ -116,9 +116,9 @@
                 <h3 class="text-xl font-bold mb-2">Performance Plus</h3>
                 <div class="text-4xl font-black my-6 text-slate-900 dark:text-white">Custom</div>
                 <ul class="space-y-4 text-sm mb-8 flex-grow">
-                    <li><i class="fa-solid fa-check text-blue-600 mr-2"></i> Full Marketing Management</li>
-                    <li><i class="fa-solid fa-check text-blue-600 mr-2"></i> Monthly Performance Audits</li>
-                    <li><i class="fa-solid fa-check text-blue-600 mr-2"></i> Ads & ROI Optimization</li>
+                    <li><i class="fa-solid fa-check text-blue-600 mr-2"></i> Full Ads Management</li>
+                    <li><i class="fa-solid fa-check text-blue-600 mr-2"></i> Monthly ROI Performance</li>
+                    <li><i class="fa-solid fa-check text-blue-600 mr-2"></i> 1-on-1 Strategy Calls</li>
                 </ul>
                 <a href="https://wa.me/917560803013?text=Hi%20Sreehari%2C%20I%20would%20like%20to%20discuss%20the%20Custom%20Performance%20Plus%20package." class="w-full py-4 rounded-xl bg-slate-900 dark:bg-slate-100 text-white dark:text-slate-900 font-extrabold text-center block shadow-lg">Contact Us</a>
             </div>
@@ -127,21 +127,22 @@
 
     <section id="about" class="max-w-6xl mx-auto px-6 py-24 border-t border-slate-200 dark:border-slate-800">
         <div class="grid md:grid-cols-2 gap-16 items-center">
-            <div>
-                <img src="profile.jpg" alt="Sreehari" class="rounded-[3rem] w-full max-w-md mx-auto shadow-2xl grayscale hover:grayscale-0 transition-all duration-700">
+            <div class="relative group">
+                <img src="profile.jpg" alt="Sreehari" class="rounded-[3rem] w-full max-w-md mx-auto shadow-2xl grayscale group-hover:grayscale-0 transition-all duration-700">
+                <div class="absolute inset-0 rounded-[3rem] ring-1 ring-inset ring-black/10 dark:ring-white/10"></div>
             </div>
             <div>
-                <span class="text-blue-600 font-bold uppercase tracking-widest text-xs">Meet Your Strategist</span>
-                <h2 class="text-3xl md:text-4xl font-extrabold mt-4 mb-6 leading-tight text-slate-900 dark:text-white">Built on Enterprise Experience.</h2>
+                <span class="text-blue-600 font-bold uppercase tracking-widest text-xs">The Expert behind the code</span>
+                <h2 class="text-3xl md:text-4xl font-extrabold mt-4 mb-6 leading-tight">Built on Enterprise Experience.</h2>
                 <p class="text-slate-600 dark:text-slate-400 mb-6 leading-relaxed">
                     I am <strong>Sreehari</strong>, an Associate Manager at Publicis Media and an MBA Candidate at NMIMS SBM. 
                 </p>
                 <p class="text-slate-600 dark:text-slate-400 mb-8 leading-relaxed">
-                    I manage high-stakes portfolios for Fortune 500 clients, applying $200M+ account management strategies to help your business scale.
+                    I manage high-stakes media portfolios for Fortune 500 clients, applying data-driven performance strategies used for global brands to your digital presence.
                 </p>
                 <div class="flex gap-8">
-                    <div><p class="text-3xl font-black text-blue-600">$200M+</p><p class="text-xs font-bold text-slate-500 uppercase">Managed</p></div>
-                    <div><p class="text-3xl font-black text-blue-600">80%</p><p class="text-xs font-bold text-slate-500 uppercase">Conv. Growth</p></div>
+                    <div><p class="text-3xl font-black text-blue-600">$200M+</p><p class="text-[10px] font-bold text-slate-500 uppercase">Managed</p></div>
+                    <div><p class="text-3xl font-black text-blue-600">80%</p><p class="text-[10px] font-bold text-slate-500 uppercase">Growth Avg.</p></div>
                 </div>
             </div>
         </div>
@@ -151,27 +152,23 @@
         <h2 class="text-3xl font-bold text-center mb-12 text-slate-900 dark:text-white">Why Work With Me?</h2>
         <div class="space-y-6">
             <div class="glass-card p-6 rounded-2xl">
-                <h4 class="font-bold mb-3 text-blue-600">"Why not just use a free AI website builder?"</h4>
+                <h4 class="font-bold mb-3 text-blue-600">"Why not just use a free AI builder?"</h4>
                 <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
-                    Most AI builders are "rental models." They charge $15–$30/month. Over a long-term horizon (5 years), you'll pay over <strong>₹80,000</strong> in hosting fees. With my service, you make a one-time investment and own your site on GitHub with <strong>zero monthly fees</strong> forever.
+                    AI builders trap you in a subscription model ($15–$30/month). Over 5 years, you'll pay over <strong>₹80,000</strong> just for hosting. I build permanent assets on enterprise infrastructure with <strong>zero monthly fees</strong> forever.
                 </p>
             </div>
             <div class="glass-card p-6 rounded-2xl">
-                <h4 class="font-bold mb-3 text-blue-600">"What if I need an update or something breaks?"</h4>
+                <h4 class="font-bold mb-3 text-blue-600">"What happens if I need an update?"</h4>
                 <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
-                    I provide <strong>Managed Digital Assets</strong>. To ensure your site remains secure, I maintain the technical backend. If you need updates, you simply message me, and I handle the deployment, ensuring your site is always professional and up-to-date.
+                    I provide <strong>Managed Digital Assets</strong>. To ensure your site remains secure and high-performing, I maintain the backend. You simply message me your update request, and I handle the deployment within 24 hours.
                 </p>
-            </div>
-            <div class="glass-card p-6 rounded-2xl">
-                <h4 class="font-bold mb-3 text-blue-600">"Is the hosting really free?"</h4>
-                <p class="text-sm text-slate-600 dark:text-slate-400">Yes. I utilize GitHub Pages, an enterprise-grade platform for developers, which allows for permanent hosting with no recurring costs.</p>
             </div>
         </div>
     </section>
 
-    <footer class="py-10 text-center border-t border-slate-100 dark:border-slate-800">
-        <p class="text-slate-400 text-xs font-bold uppercase tracking-widest mb-6">&copy; 2026 Sreehari • Digital Growth Partner</p>
-        <a href="https://wa.me/917560803013?text=Hi%20Sreehari%2C%20I%20want%20to%20get%20started%20with%20your%20services." class="bg-slate-900 dark:bg-blue-600 text-white px-8 py-3 rounded-xl font-bold hover:opacity-90 transition-all">Contact Sreehari</a>
+    <footer class="py-20 text-center border-t border-slate-100 dark:border-slate-800">
+        <p class="text-slate-400 text-[10px] font-bold uppercase tracking-widest mb-6">&copy; 2026 Sreehari • Digital Growth Strategist</p>
+        <a href="https://wa.me/917560803013?text=Hi%20Sreehari%2C%20I'm%20ready%20to%20build%20my%20digital%20asset." class="bg-slate-900 dark:bg-blue-600 text-white px-8 py-3 rounded-xl font-bold hover:opacity-90 transition-all">Contact Strategist</a>
     </footer>
 
     <script>
