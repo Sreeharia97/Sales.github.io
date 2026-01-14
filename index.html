@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professional Digital Solutions | Sreehari</title>
+    <title>Sreehari | Professional Portfolios & Digital Growth</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
     
     <script>
+        // Theme Management
         if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
             document.documentElement.classList.add('dark')
         } else {
@@ -33,8 +34,8 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
-        .cta-button { transition: all 0.3s ease; }
-        .cta-button:hover { transform: translateY(-2px); shadow: 0 10px 15px -3px rgba(59, 130, 246, 0.4); }
+        .hover-card { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+        .hover-card:hover { transform: translateY(-8px); }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-900 transition-colors duration-300">
@@ -48,147 +49,141 @@
             </div>
             <div class="hidden md:flex items-center gap-8">
                 <a href="#services" class="text-sm font-semibold text-slate-600 dark:text-slate-300 hover:text-blue-600 transition-colors">Services</a>
-                <a href="#process" class="text-sm font-semibold text-slate-600 dark:text-slate-300 hover:text-blue-600 transition-colors">Process</a>
-                <section id="pricing" class="max-w-6xl mx-auto px-6 py-20">
-        <div class="text-center mb-16">
-            <h2 class="text-3xl font-bold mb-4">Transparent Pricing</h2>
-            <p class="text-slate-500">Premium digital solutions with zero recurring hosting costs.</p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div class="glass-card p-8 rounded-[2.5rem] flex flex-col hover-card">
-                <h3 class="text-xl font-bold mb-2">The Essential</h3>
-                <p class="text-slate-500 text-sm mb-6">Perfect for professionals.</p>
-                <div class="text-4xl font-black mb-6">₹4,999</div>
-                <ul class="space-y-4 text-sm mb-8 flex-grow">
-                    <li><i class="fa-solid fa-check text-blue-600 mr-2"></i> Custom Portfolio Design</li>
-                    <li><i class="fa-solid fa-check text-blue-600 mr-2"></i> Permanent GitHub Hosting</li>
-                    <li><i class="fa-solid fa-check text-blue-600 mr-2"></i> Mobile Responsive</li>
-                    <li class="opacity-50"><i class="fa-solid fa-xmark mr-2"></i> GA4 Analytics Setup</li>
-                </ul>
-                <a href="https://wa.me/917560803013?text=I'm%20interested%20in%20the%20Essential%20Package" class="w-full py-3 rounded-xl border border-blue-600 text-blue-600 font-bold text-center hover:bg-blue-600 hover:text-white transition-all">Get Essential</a>
-            </div>
-
-            <div class="bg-slate-900 dark:bg-blue-600 p-8 rounded-[2.5rem] flex flex-col transform md:scale-105 shadow-2xl relative text-white">
-                <div class="absolute top-0 right-10 -translate-y-1/2 bg-teal-400 text-slate-900 text-[10px] font-black px-4 py-1 rounded-full uppercase tracking-widest">Most Popular</div>
-                <h3 class="text-xl font-bold mb-2">Growth Suite</h3>
-                <p class="text-blue-100 text-sm mb-6">For ambitious brands.</p>
-                <div class="text-4xl font-black mb-6">₹9,999</div>
-                <ul class="space-y-4 text-sm mb-8 flex-grow">
-                    <li><i class="fa-solid fa-check text-teal-300 mr-2"></i> Everything in Essential</li>
-                    <li><i class="fa-solid fa-check text-teal-300 mr-2"></i> GA4 & GTM Setup</li>
-                    <li><i class="fa-solid fa-check text-teal-300 mr-2"></i> SEO Optimization</li>
-                    <li><i class="fa-solid fa-check text-teal-300 mr-2"></i> Meta Pixel Integration</li>
-                </ul>
-                <a href="https://wa.me/917560803013?text=I'm%20interested%20in%20the%20Growth%20Suite" class="w-full py-3 rounded-xl bg-white text-blue-600 font-bold text-center hover:shadow-lg transition-all">Start Growing</a>
-            </div>
-
-            <div class="glass-card p-8 rounded-[2.5rem] flex flex-col hover-card">
-                <h3 class="text-xl font-bold mb-2">Full Performance</h3>
-                <p class="text-slate-500 text-sm mb-6">The complete marketing engine.</p>
-                <div class="text-4xl font-black mb-6">Custom</div>
-                <ul class="space-y-4 text-sm mb-8 flex-grow">
-                    <li><i class="fa-solid fa-check text-blue-600 mr-2"></i> Everything in Growth</li>
-                    <li><i class="fa-solid fa-check text-blue-600 mr-2"></i> Meta/Google Ads Audit</li>
-                    <li><i class="fa-solid fa-check text-blue-600 mr-2"></i> Predictive ROI Modeling</li>
-                    <li><i class="fa-solid fa-check text-blue-600 mr-2"></i> 1-on-1 Marketing Strategy</li>
-                </ul>
-                <a href="https://wa.me/917560803013?text=I'm%20interested%20in%20the%20Full%20Performance%20Package" class="w-full py-3 rounded-xl border border-slate-900 dark:border-white text-slate-900 dark:text-white font-bold text-center hover:bg-slate-900 dark:hover:bg-white dark:hover:text-blue-600 transition-all">Contact for Quote</a>
-            </div>
-        </div>
-    </section>
+                <a href="#pricing" class="text-sm font-semibold text-slate-600 dark:text-slate-300 hover:text-blue-600 transition-colors">Pricing</a>
+                <a href="#about" class="text-sm font-semibold text-slate-600 dark:text-slate-300 hover:text-blue-600 transition-colors">Expertise</a>
                 <a href="#faq" class="text-sm font-semibold text-slate-600 dark:text-slate-300 hover:text-blue-600 transition-colors">FAQ</a>
             </div>
             <div class="flex items-center gap-2">
-                <button id="theme-toggle" class="p-2.5 text-slate-500 dark:text-yellow-400">
+                <button id="theme-toggle" class="p-2.5 text-slate-500 dark:text-yellow-400 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-xl transition-all">
                     <i id="theme-toggle-icon" class="fa-solid fa-moon"></i>
                 </button>
-                <a href="https://wa.me/917560803013" class="bg-blue-600 text-white px-6 py-2.5 rounded-xl text-sm font-bold cta-button">Let's Talk</a>
+                <a href="https://wa.me/917560803013" class="bg-blue-600 text-white px-6 py-2.5 rounded-xl text-sm font-bold shadow-lg shadow-blue-500/25 hover:bg-blue-700 transition-all active:scale-95">
+                    Let's Talk
+                </a>
             </div>
         </div>
     </nav>
 
     <section class="pt-48 pb-20 px-6">
         <div class="max-w-4xl mx-auto text-center">
-            <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-8 leading-[1.1]">
-                Your Brand Needs a <br>
-                <span class="gradient-text">Permanent Home.</span>
+            <span class="px-4 py-1.5 rounded-full bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 text-xs font-bold uppercase tracking-widest">Digital Growth Partner</span>
+            <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mt-6 mb-8 leading-[1.1]">
+                Own Your Presence. <br>
+                <span class="gradient-text">Zero Monthly Fees.</span>
             </h1>
             <p class="text-lg md:text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto leading-relaxed">
-                I build high-speed portfolios and marketing systems with <strong>zero recurring costs</strong>. Stop paying for hosting; start owning your presence.
+                I build high-performance portfolios and marketing systems for professionals. Stop paying for hosting; start building your digital asset.
             </p>
-            <div class="mt-10 flex flex-col sm:flex-row justify-center gap-4">
-                <a href="https://wa.me/917560803013" class="bg-blue-600 text-white px-8 py-4 rounded-2xl font-bold text-lg shadow-xl shadow-blue-500/20 cta-button">Get Started Now</a>
+            <div class="mt-10">
+                <a href="#pricing" class="bg-blue-600 text-white px-10 py-4 rounded-2xl font-bold text-lg shadow-xl shadow-blue-500/20 hover:bg-blue-700 transition-all inline-block">View Packages</a>
             </div>
         </div>
     </section>
 
     <section id="services" class="max-w-6xl mx-auto px-6 py-20">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div class="glass-card p-8 rounded-[2rem] border-b-4 border-b-blue-500">
-                <i class="fa-solid fa-cloud-arrow-down text-3xl text-blue-600 mb-6"></i>
-                <h3 class="text-xl font-bold mb-3">Zero-Fee Hosting</h3>
-                <p class="text-slate-500 text-sm">Deployment on GitHub Pages ensures your site stays live forever with no monthly maintenance bills.</p>
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+            <div class="md:col-span-8 glass-card p-10 rounded-[2.5rem] relative overflow-hidden group">
+                <h3 class="text-3xl font-bold mb-4">Zero-Fee Portfolios</h3>
+                <p class="text-slate-600 dark:text-slate-400 max-w-md">Permanent, blazing-fast websites hosted on GitHub. No subscriptions, ever. You own the code 100%.</p>
+                <ul class="mt-6 space-y-2 font-semibold text-sm">
+                    <li><i class="fa-solid fa-check text-green-500 mr-2"></i> Custom Domain Support</li>
+                    <li><i class="fa-solid fa-check text-green-500 mr-2"></i> SEO Optimized</li>
+                </ul>
+                <i class="fa-solid fa-code absolute -right-10 -bottom-10 text-[12rem] text-slate-200 dark:text-slate-800 opacity-20"></i>
             </div>
-            <div class="glass-card p-8 rounded-[2rem] border-b-4 border-b-teal-500">
-                <i class="fa-solid fa-magnifying-glass-chart text-3xl text-teal-500 mb-6"></i>
-                <h3 class="text-xl font-bold mb-3">Ad Strategy</h3>
-                <p class="text-slate-500 text-sm">Full-funnel Meta and Google Ads setups designed to turn clicks into high-value customers.</p>
-            </div>
-            <div class="glass-card p-8 rounded-[2rem] border-b-4 border-b-purple-500">
-                <i class="fa-solid fa-gauge-high text-3xl text-purple-600 mb-6"></i>
-                <h3 class="text-xl font-bold mb-3">Extreme Speed</h3>
-                <p class="text-slate-500 text-sm">Clean code architecture ensures your site loads in under 1 second, boosting SEO and user retention.</p>
+            <div class="md:col-span-4 bg-blue-600 p-10 rounded-[2.5rem] text-white">
+                <h3 class="text-2xl font-bold mb-4">Paid Media</h3>
+                <p class="text-blue-100 text-sm leading-relaxed">Leveraging enterprise strategy from $200M+ account management to scale your business.</p>
             </div>
         </div>
     </section>
 
-    <section id="process" class="max-w-5xl mx-auto px-6 py-20">
+    <section id="pricing" class="max-w-6xl mx-auto px-6 py-20">
         <div class="text-center mb-16">
-            <h2 class="text-3xl font-bold">How It Works</h2>
+            <h2 class="text-4xl font-extrabold mb-4">Transparent Pricing</h2>
+            <p class="text-slate-500">Professional solutions with zero recurring costs.</p>
         </div>
-        <div class="grid md:grid-cols-3 gap-12 text-center">
-            <div class="relative">
-                <div class="text-5xl font-black text-slate-200 dark:text-slate-800 mb-4">01</div>
-                <h4 class="font-bold mb-2">Consultation</h4>
-                <p class="text-sm text-slate-500">We discuss your goals via WhatsApp or Zoom to map out your digital strategy.</p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="glass-card p-8 rounded-[2.5rem] flex flex-col hover-card">
+                <h3 class="text-xl font-bold mb-2">The Essential</h3>
+                <div class="text-4xl font-black my-6">₹4,999</div>
+                <ul class="space-y-4 text-sm mb-8 flex-grow">
+                    <li><i class="fa-solid fa-check text-blue-600 mr-2"></i> Custom Portfolio Design</li>
+                    <li><i class="fa-solid fa-check text-blue-600 mr-2"></i> GitHub Permanent Hosting</li>
+                    <li><i class="fa-solid fa-check text-blue-600 mr-2"></i> Mobile Responsive</li>
+                </ul>
+                <a href="https://wa.me/917560803013?text=I'm%20interested%20in%20the%20Essential%20Package" class="w-full py-3 rounded-xl border border-blue-600 text-blue-600 font-bold text-center hover:bg-blue-600 hover:text-white transition-all">Get Started</a>
             </div>
-            <div class="relative">
-                <div class="text-5xl font-black text-slate-200 dark:text-slate-800 mb-4">02</div>
-                <h4 class="font-bold mb-2">Development</h4>
-                <p class="text-sm text-slate-500">I build your custom portfolio and integrate tracking (GA4) for marketing insights.</p>
+            <div class="bg-slate-900 dark:bg-blue-600 p-8 rounded-[2.5rem] flex flex-col transform md:scale-105 shadow-2xl relative text-white">
+                <div class="absolute top-0 right-10 -translate-y-1/2 bg-teal-400 text-slate-900 text-[10px] font-black px-4 py-1 rounded-full uppercase tracking-widest">Best Value</div>
+                <h3 class="text-xl font-bold mb-2">Growth Suite</h3>
+                <div class="text-4xl font-black my-6">₹9,999</div>
+                <ul class="space-y-4 text-sm mb-8 flex-grow text-blue-50">
+                    <li><i class="fa-solid fa-check text-teal-300 mr-2"></i> Everything in Essential</li>
+                    <li><i class="fa-solid fa-check text-teal-300 mr-2"></i> GA4 & GTM Setup</li>
+                    <li><i class="fa-solid fa-check text-teal-300 mr-2"></i> Meta Pixel Integration</li>
+                    <li><i class="fa-solid fa-check text-teal-300 mr-2"></i> SEO Optimization</li>
+                </ul>
+                <a href="https://wa.me/917560803013?text=I'm%20interested%20in%20the%20Growth%20Suite" class="w-full py-3 rounded-xl bg-white text-blue-600 font-bold text-center shadow-lg transition-all">Start Growing</a>
             </div>
-            <div class="relative">
-                <div class="text-5xl font-black text-slate-200 dark:text-slate-800 mb-4">03</div>
-                <h4 class="font-bold mb-2">Launch</h4>
-                <p class="text-sm text-slate-500">Your site goes live on your domain with permanent, cost-free hosting.</p>
+            <div class="glass-card p-8 rounded-[2.5rem] flex flex-col hover-card">
+                <h3 class="text-xl font-bold mb-2">Performance Plus</h3>
+                <div class="text-4xl font-black my-6">Custom</div>
+                <ul class="space-y-4 text-sm mb-8 flex-grow">
+                    <li><i class="fa-solid fa-check text-blue-600 mr-2"></i> Everything in Growth</li>
+                    <li><i class="fa-solid fa-check text-blue-600 mr-2"></i> Ads Strategy & Audit</li>
+                    <li><i class="fa-solid fa-check text-blue-600 mr-2"></i> Predictive ROI Modeling</li>
+                </ul>
+                <a href="https://wa.me/917560803013?text=I'm%20interested%20in%20the%20Custom%20Performance%20Package" class="w-full py-3 rounded-xl border border-slate-900 dark:border-white text-slate-900 dark:text-white font-bold text-center transition-all">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="max-w-6xl mx-auto px-6 py-24 border-t border-slate-200 dark:border-slate-800">
+        <div class="grid md:grid-cols-2 gap-16 items-center">
+            <div>
+                <img src="profile.jpg" alt="Strategist" class="rounded-[3rem] w-full max-w-md mx-auto shadow-2xl grayscale hover:grayscale-0 transition-all duration-700">
+            </div>
+            <div>
+                <span class="text-blue-600 font-bold uppercase tracking-widest text-xs">The Strategy</span>
+                <h2 class="text-4xl font-extrabold mt-4 mb-6 text-slate-900 dark:text-white">Built on Enterprise Experience.</h2>
+                <p class="text-slate-600 dark:text-slate-400 mb-6 leading-relaxed">
+                    As an <strong>Associate Manager at Publicis Media</strong> and <strong>MBA Candidate at NMIMS</strong>, I manage high-stakes media portfolios for Fortune 500 clients. 
+                </p>
+                <p class="text-slate-600 dark:text-slate-400 mb-8 leading-relaxed">
+                    I apply the same data-driven strategies used for global brands to ensure your website isn't just a page, but a conversion engine.
+                </p>
+                <div class="flex gap-8">
+                    <div>
+                        <p class="text-3xl font-black text-blue-600">$200M+</p>
+                        <p class="text-xs uppercase font-bold text-slate-500 tracking-tighter">Managed</p>
+                    </div>
+                    <div>
+                        <p class="text-3xl font-black text-blue-600">80%</p>
+                        <p class="text-xs uppercase font-bold text-slate-500 tracking-tighter">Conv. Increase</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="faq" class="max-w-3xl mx-auto px-6 py-20">
-        <h2 class="text-3xl font-bold text-center mb-12">Common Questions</h2>
+        <h2 class="text-3xl font-bold text-center mb-12">FAQ</h2>
         <div class="space-y-4">
             <div class="glass-card p-6 rounded-2xl">
-                <h4 class="font-bold mb-2 italic">"Why is there no hosting fee?"</h4>
-                <p class="text-sm text-slate-500 leading-relaxed">I utilize GitHub Pages—a professional-grade hosting service for developers—which allows for permanent hosting of static sites for free.</p>
+                <h4 class="font-bold mb-2">"Why is hosting free?"</h4>
+                <p class="text-sm text-slate-500">I use GitHub Pages, a professional-grade hosting infrastructure for static sites, which has no recurring monthly costs.</p>
             </div>
             <div class="glass-card p-6 rounded-2xl">
-                <h4 class="font-bold mb-2 italic">"Can I use my own domain name?"</h4>
-                <p class="text-sm text-slate-500 leading-relaxed">Absolutely. I will help you link any domain (e.g., .com, .in) to your new GitHub-hosted site.</p>
+                <h4 class="font-bold mb-2">"Can I update the content later?"</h4>
+                <p class="text-sm text-slate-500">Yes, the code is built to be easily editable, and I provide a basic guide on how to make changes.</p>
             </div>
         </div>
     </section>
 
-    <section class="max-w-5xl mx-auto px-6 pb-32">
-        <div class="bg-blue-600 rounded-[3rem] p-12 text-center text-white">
-            <h2 class="text-4xl font-bold mb-6">Stop Waiting. Build Today.</h2>
-            <a href="https://wa.me/917560803013" class="inline-block bg-white text-blue-600 px-10 py-4 rounded-2xl font-bold cta-button">Message on WhatsApp</a>
-        </div>
-    </section>
-
-    <footer class="py-10 text-center text-slate-400 text-xs font-bold uppercase tracking-widest">
-        &copy; 2026 Professional Digital Solutions • Powered by Sreehari
+    <footer class="py-20 text-center border-t border-slate-100 dark:border-slate-800">
+        <p class="text-slate-400 text-xs font-bold uppercase tracking-widest mb-8">&copy; 2026 Digital Growth • Sreehari A</p>
+        <a href="https://wa.me/917560803013" class="bg-slate-900 dark:bg-blue-600 text-white px-8 py-3 rounded-xl font-bold">Contact Strategist</a>
     </footer>
 
     <script>
