@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sreehari | Professional Portfolios & Digital Growth</title>
+    <title>Professional Digital Solutions | Sreehari</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
@@ -33,67 +33,125 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
-        .cta-button {
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-        .cta-button:hover { transform: scale(1.02); shadow: 0 20px 25px -5px rgba(59, 130, 246, 0.5); }
+        .cta-button { transition: all 0.3s ease; }
+        .cta-button:hover { transform: translateY(-2px); shadow: 0 10px 15px -3px rgba(59, 130, 246, 0.4); }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-900 transition-colors duration-300">
 
-    <nav class="fixed top-0 w-full z-50 px-6 py-4">
-    <div class="max-w-6xl mx-auto flex justify-end items-center glass-card px-6 py-3 rounded-2xl shadow-sm">
-        <div class="flex items-center gap-4">
-            <button id="theme-toggle" class="p-2 text-slate-500 dark:text-yellow-400">
-                <i id="theme-toggle-icon" class="fa-solid fa-moon"></i>
-            </button>
-            <a href="https://wa.me/917560803013" class="bg-slate-900 dark:bg-blue-600 text-white px-5 py-2 rounded-xl text-sm font-bold cta-button">Let's Talk</a>
+    <nav class="fixed top-0 w-full z-50 px-6 py-6">
+        <div class="max-w-5xl mx-auto flex justify-between items-center glass-card px-2 py-2 rounded-2xl shadow-xl">
+            <div class="pl-4">
+                <div class="w-8 h-8 bg-gradient-to-tr from-blue-600 to-teal-400 rounded-lg flex items-center justify-center">
+                    <i class="fa-solid fa-bolt text-white text-xs"></i>
+                </div>
+            </div>
+            <div class="hidden md:flex items-center gap-8">
+                <a href="#services" class="text-sm font-semibold text-slate-600 dark:text-slate-300 hover:text-blue-600 transition-colors">Services</a>
+                <a href="#process" class="text-sm font-semibold text-slate-600 dark:text-slate-300 hover:text-blue-600 transition-colors">Process</a>
+                <a href="#faq" class="text-sm font-semibold text-slate-600 dark:text-slate-300 hover:text-blue-600 transition-colors">FAQ</a>
+            </div>
+            <div class="flex items-center gap-2">
+                <button id="theme-toggle" class="p-2.5 text-slate-500 dark:text-yellow-400">
+                    <i id="theme-toggle-icon" class="fa-solid fa-moon"></i>
+                </button>
+                <a href="https://wa.me/917560803013" class="bg-blue-600 text-white px-6 py-2.5 rounded-xl text-sm font-bold cta-button">Let's Talk</a>
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>
 
-    <section class="pt-40 pb-20 px-6">
+    <section class="pt-48 pb-20 px-6">
         <div class="max-w-4xl mx-auto text-center">
-            <span class="px-4 py-1.5 rounded-full bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 text-xs font-bold uppercase tracking-widest">Available for New Projects</span>
-            <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mt-6 mb-8 leading-[1.1]">
-                Stop Building Resumes. <br>
-                <span class="gradient-text">Start Building Assets.</span>
+            <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-8 leading-[1.1]">
+                Your Brand Needs a <br>
+                <span class="gradient-text">Permanent Home.</span>
             </h1>
             <p class="text-lg md:text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto leading-relaxed">
-                I help professionals and brands launch high-speed, <strong>zero-hosting-cost</strong> portfolios and data-driven marketing systems.
+                I build high-speed portfolios and marketing systems with <strong>zero recurring costs</strong>. Stop paying for hosting; start owning your presence.
             </p>
             <div class="mt-10 flex flex-col sm:flex-row justify-center gap-4">
-                <a href="https://wa.me/917560803013?text=Hi%20Sreehari,%20I'm%20interested%20in%20a%20portfolio%20website" class="bg-blue-600 text-white px-8 py-4 rounded-2xl font-bold text-lg shadow-xl shadow-blue-500/20 cta-button">
-                    Build My Portfolio
-                </a>
-                <a href="#services" class="glass-card px-8 py-4 rounded-2xl font-bold text-lg cta-button">
-                    Explore Services
-                </a>
+                <a href="https://wa.me/917560803013" class="bg-blue-600 text-white px-8 py-4 rounded-2xl font-bold text-lg shadow-xl shadow-blue-500/20 cta-button">Get Started Now</a>
             </div>
         </div>
     </section>
 
     <section id="services" class="max-w-6xl mx-auto px-6 py-20">
-        <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
-            
-            <div class="md:col-span-8 glass-card p-10 rounded-[2.5rem] relative overflow-hidden group">
-                <div class="relative z-10">
-                    <h3 class="text-3xl font-bold mb-4">Zero-Hosting Portfolios</h3>
-                    <p class="text-slate-600 dark:text-slate-400 max-w-md">I build permanent, blazing-fast websites using GitHub Pages. You own the code. No monthly subscriptions, ever.</p>
-                    <ul class="mt-6 space-y-2 font-semibold text-sm">
-                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i> Custom Domain Support</li>
-                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i> Dark Mode Included</li>
-                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i> SEO Optimized</li>
-                    </ul>
-                </div>
-                <i class="fa-solid fa-code absolute -right-10 -bottom-10 text-[12rem] text-slate-200 dark:text-slate-800 opacity-20 group-hover:rotate-12 transition-transform duration-500"></i>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="glass-card p-8 rounded-[2rem] border-b-4 border-b-blue-500">
+                <i class="fa-solid fa-cloud-arrow-down text-3xl text-blue-600 mb-6"></i>
+                <h3 class="text-xl font-bold mb-3">Zero-Fee Hosting</h3>
+                <p class="text-slate-500 text-sm">Deployment on GitHub Pages ensures your site stays live forever with no monthly maintenance bills.</p>
             </div>
+            <div class="glass-card p-8 rounded-[2rem] border-b-4 border-b-teal-500">
+                <i class="fa-solid fa-magnifying-glass-chart text-3xl text-teal-500 mb-6"></i>
+                <h3 class="text-xl font-bold mb-3">Ad Strategy</h3>
+                <p class="text-slate-500 text-sm">Full-funnel Meta and Google Ads setups designed to turn clicks into high-value customers.</p>
+            </div>
+            <div class="glass-card p-8 rounded-[2rem] border-b-4 border-b-purple-500">
+                <i class="fa-solid fa-gauge-high text-3xl text-purple-600 mb-6"></i>
+                <h3 class="text-xl font-bold mb-3">Extreme Speed</h3>
+                <p class="text-slate-500 text-sm">Clean code architecture ensures your site loads in under 1 second, boosting SEO and user retention.</p>
+            </div>
+        </div>
+    </section>
 
-            <div class="md:col-span-4 bg-blue-600 p-10 rounded-[2.5rem] text-white">
-                <h3 class="text-2xl font-bold mb-4 text-white">Digital Strategy</h3>
-                <p class="text-blue-100 text-sm leading-relaxed">Leveraging experience from <strong>$200M portfolios</strong> to help your brand scale efficiently.</p>
-                <div class="mt-8 pt-8 border-t border-blue-400/30">
-                    <p class="text-xs font-bold uppercase tracking-widest opacity-70">Focus Areas</p>
-                    <p class="mt-2 font-bold uppercase">ROI Optimization</p>
-                    <p class="mt-1 font-bold uppercase">Funnel Analytics</p>
-                </div>
+    <section id="process" class="max-w-5xl mx-auto px-6 py-20">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold">How It Works</h2>
+        </div>
+        <div class="grid md:grid-cols-3 gap-12 text-center">
+            <div class="relative">
+                <div class="text-5xl font-black text-slate-200 dark:text-slate-800 mb-4">01</div>
+                <h4 class="font-bold mb-2">Consultation</h4>
+                <p class="text-sm text-slate-500">We discuss your goals via WhatsApp or Zoom to map out your digital strategy.</p>
+            </div>
+            <div class="relative">
+                <div class="text-5xl font-black text-slate-200 dark:text-slate-800 mb-4">02</div>
+                <h4 class="font-bold mb-2">Development</h4>
+                <p class="text-sm text-slate-500">I build your custom portfolio and integrate tracking (GA4) for marketing insights.</p>
+            </div>
+            <div class="relative">
+                <div class="text-5xl font-black text-slate-200 dark:text-slate-800 mb-4">03</div>
+                <h4 class="font-bold mb-2">Launch</h4>
+                <p class="text-sm text-slate-500">Your site goes live on your domain with permanent, cost-free hosting.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="max-w-3xl mx-auto px-6 py-20">
+        <h2 class="text-3xl font-bold text-center mb-12">Common Questions</h2>
+        <div class="space-y-4">
+            <div class="glass-card p-6 rounded-2xl">
+                <h4 class="font-bold mb-2 italic">"Why is there no hosting fee?"</h4>
+                <p class="text-sm text-slate-500 leading-relaxed">I utilize GitHub Pages—a professional-grade hosting service for developers—which allows for permanent hosting of static sites for free.</p>
+            </div>
+            <div class="glass-card p-6 rounded-2xl">
+                <h4 class="font-bold mb-2 italic">"Can I use my own domain name?"</h4>
+                <p class="text-sm text-slate-500 leading-relaxed">Absolutely. I will help you link any domain (e.g., .com, .in) to your new GitHub-hosted site.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="max-w-5xl mx-auto px-6 pb-32">
+        <div class="bg-blue-600 rounded-[3rem] p-12 text-center text-white">
+            <h2 class="text-4xl font-bold mb-6">Stop Waiting. Build Today.</h2>
+            <a href="https://wa.me/917560803013" class="inline-block bg-white text-blue-600 px-10 py-4 rounded-2xl font-bold cta-button">Message on WhatsApp</a>
+        </div>
+    </section>
+
+    <footer class="py-10 text-center text-slate-400 text-xs font-bold uppercase tracking-widest">
+        &copy; 2026 Professional Digital Solutions • Powered by Sreehari
+    </footer>
+
+    <script>
+        const themeToggleBtn = document.getElementById('theme-toggle');
+        const themeToggleIcon = document.getElementById('theme-toggle-icon');
+        themeToggleBtn.addEventListener('click', () => {
+            document.documentElement.classList.toggle('dark');
+            const isDark = document.documentElement.classList.contains('dark');
+            themeToggleIcon.classList.replace(isDark ? 'fa-moon' : 'fa-sun', isDark ? 'fa-sun' : 'fa-moon');
+            localStorage.setItem('theme', isDark ? 'dark' : 'light');
+        });
+    </script>
+</body>
+</html>
