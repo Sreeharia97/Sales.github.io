@@ -3,13 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sreehari A | Digital Marketer</title>
+    <title>Sreehari | Professional Portfolios & Digital Growth</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
     
     <script>
-        // Theme Check
         if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
             document.documentElement.classList.add('dark')
         } else {
@@ -18,195 +17,84 @@
     </script>
 
     <style>
-        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; transition: background-color 0.3s ease, color 0.3s ease; }
-        .dark body { background-color: #0f172a; color: #f1f5f9; }
-        .dark .bg-white { background-color: #1e293b; border-color: #334155; }
-        .dark .text-gray-900 { color: #f8fafc; }
-        .dark .text-gray-600 { color: #94a3b8; }
-        .dark .border-gray-100 { border-color: #334155; }
-        .hover-card { transition: all 0.3s ease; }
-        .hover-card:hover { transform: translateY(-5px); }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; scroll-behavior: smooth; }
+        .dark body { background-color: #020617; color: #f8fafc; }
+        .glass-card { 
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(226, 232, 240, 0.8);
+        }
+        .dark .glass-card {
+            background: rgba(30, 41, 59, 0.5);
+            border: 1px solid rgba(51, 65, 85, 0.5);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #3b82f6 0%, #2dd4bf 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .cta-button {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .cta-button:hover { transform: scale(1.02); shadow: 0 20px 25px -5px rgba(59, 130, 246, 0.5); }
     </style>
 </head>
-<body class="bg-[#f8fafc] text-gray-900 leading-relaxed">
+<body class="bg-slate-50 text-slate-900 transition-colors duration-300">
 
-    <div class="fixed top-6 right-6 z-50">
-        <button id="theme-toggle" class="p-3 rounded-full bg-gray-200 dark:bg-slate-700 text-gray-800 dark:text-yellow-400 shadow-lg hover:scale-110 transition-transform">
-            <i id="theme-toggle-icon" class="fa-solid fa-moon"></i>
-        </button>
-    </div>
-
-    <header class="max-w-4xl mx-auto pt-20 pb-12 px-6 text-center">
-        <div class="relative inline-block">
-            <img src="profile.jpg" alt="Sreehari A" class="w-36 h-36 rounded-full mx-auto mb-6 object-cover border-4 border-white dark:border-slate-800 shadow-2xl">
-            <div class="absolute bottom-6 right-2 bg-green-500 w-5 h-5 rounded-full border-4 border-white dark:border-slate-800 shadow-sm"></div>
+    <nav class="fixed top-0 w-full z-50 px-6 py-4">
+        <div class="max-w-6xl mx-auto flex justify-between items-center glass-card px-6 py-3 rounded-2xl shadow-sm">
+            <span class="font-extrabold text-xl tracking-tighter">SREEHARI<span class="text-blue-600">.</span></span>
+            <div class="flex items-center gap-4">
+                <button id="theme-toggle" class="p-2 text-slate-500 dark:text-yellow-400">
+                    <i id="theme-toggle-icon" class="fa-solid fa-moon"></i>
+                </button>
+                <a href="https://wa.me/917560803013" class="bg-slate-900 dark:bg-blue-600 text-white px-5 py-2 rounded-xl text-sm font-bold cta-button">Let's Talk</a>
+            </div>
         </div>
-        <h1 class="text-5xl font-extrabold tracking-tight">Sreehari A</h1>
-        <p class="text-blue-600 dark:text-blue-400 text-lg font-bold uppercase tracking-[0.2em] mt-3">Digital Marketer</p>
-        
-        <p class="mt-6 text-gray-600 dark:text-gray-400 max-w-2xl mx-auto text-lg leading-relaxed">
-<p class="mt-6 text-gray-600 dark:text-gray-400 max-w-2xl mx-auto text-lg leading-relaxed text-center">
-    <strong>Associate Manager at Publicis Media | MBA Candidate at NMIMS SBM</strong>
-</p>        
-        <div class="mt-10 flex flex-wrap justify-center gap-4">
-            <a href="resume.pdf" download class="bg-gray-900 dark:bg-blue-600 text-white px-8 py-3.5 rounded-full font-bold hover:opacity-90 transition shadow-lg flex items-center">
-                <i class="fa-solid fa-file-arrow-down mr-2"></i> Download Resume
-            </a>
-            <a href="https://linkedin.com/in/sreeharia04" target="_blank" class="bg-[#0077b5] text-white px-8 py-3.5 rounded-full font-bold hover:bg-opacity-90 transition shadow-lg flex items-center">
-                <i class="fa-brands fa-linkedin mr-2"></i> LinkedIn
-            </a>
-        </div>
-    </header>
+    </nav>
 
-    <main class="max-w-4xl mx-auto px-6 pb-24 space-y-20">
-
-     <section id="skills">
-    <h2 class="text-2xl font-bold mb-8 flex items-center text-gray-900 dark:text-white">
-        <i class="fa-solid fa-screwdriver-wrench text-blue-600 mr-3"></i> Expertise & Toolstack
-    </h2>
-    
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div class="space-y-4">
-            <h3 class="text-sm font-bold uppercase tracking-widest text-blue-600 dark:text-blue-400">Digital Strategy</h3>
-            <ul class="space-y-3 text-gray-700 dark:text-gray-300">
-                <li class="flex items-center"><i class="fa-solid fa-circle-check text-blue-500 mr-2 text-xs"></i> Media Planning</li>
-                <li class="flex items-center"><i class="fa-solid fa-circle-check text-blue-500 mr-2 text-xs"></i> Performance Marketing</li>
-                <li class="flex items-center"><i class="fa-solid fa-circle-check text-blue-500 mr-2 text-xs"></i> Campaign Optimization</li>
-                <li class="flex items-center"><i class="fa-solid fa-circle-check text-blue-500 mr-2 text-xs"></i> Pacing Analysis</li>
-            </ul>
+    <section class="pt-40 pb-20 px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <span class="px-4 py-1.5 rounded-full bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 text-xs font-bold uppercase tracking-widest">Available for New Projects</span>
+            <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mt-6 mb-8 leading-[1.1]">
+                Stop Building Resumes. <br>
+                <span class="gradient-text">Start Building Assets.</span>
+            </h1>
+            <p class="text-lg md:text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto leading-relaxed">
+                I help professionals and brands launch high-speed, <strong>zero-hosting-cost</strong> portfolios and data-driven marketing systems.
+            </p>
+            <div class="mt-10 flex flex-col sm:flex-row justify-center gap-4">
+                <a href="https://wa.me/917560803013?text=Hi%20Sreehari,%20I'm%20interested%20in%20a%20portfolio%20website" class="bg-blue-600 text-white px-8 py-4 rounded-2xl font-bold text-lg shadow-xl shadow-blue-500/20 cta-button">
+                    Build My Portfolio
+                </a>
+                <a href="#services" class="glass-card px-8 py-4 rounded-2xl font-bold text-lg cta-button">
+                    Explore Services
+                </a>
+            </div>
         </div>
+    </section>
 
-        <div class="space-y-4">
-            <h3 class="text-sm font-bold uppercase tracking-widest text-green-600 dark:text-green-400">Channels & Platforms</h3>
-            <ul class="space-y-3 text-gray-700 dark:text-gray-300">
-                <li class="flex items-center"><i class="fa-solid fa-circle-check text-green-500 mr-2 text-xs"></i> Social Media Marketing</li>
-                <li class="flex items-center"><i class="fa-solid fa-circle-check text-green-500 mr-2 text-xs"></i> AdOps Reporting</li>
-                <li class="flex items-center"><i class="fa-solid fa-circle-check text-green-500 mr-2 text-xs"></i> Programmatic Advertising</li>
-                <li class="flex items-center"><i class="fa-solid fa-circle-check text-green-500 mr-2 text-xs"></i> Search Engine Marketing (SEM)</li>
-            </ul>
-        </div>
-
-        <div class="space-y-4">
-            <h3 class="text-sm font-bold uppercase tracking-widest text-purple-600 dark:text-purple-400">Technical Stack</h3>
-            <ul class="space-y-3 text-gray-700 dark:text-gray-300">
-                <li class="flex items-center"><i class="fa-solid fa-circle-check text-purple-500 mr-2 text-xs"></i> CM360 / DCM</li>
-                <li class="flex items-center"><i class="fa-solid fa-circle-check text-purple-500 mr-2 text-xs"></i> Google Analytics 4 (GA4)</li>
-                <li class="flex items-center"><i class="fa-solid fa-circle-check text-purple-500 mr-2 text-xs"></i> Meta Pixel Integration</li>
-                <li class="flex items-center"><i class="fa-solid fa-circle-check text-purple-500 mr-2 text-xs"></i> n8n</li>
-                <li class="flex items-center"><i class="fa-solid fa-circle-check text-purple-500 mr-2 text-xs"></i> Looker Studio</li>
-            </ul>
-        </div>
-    </div>
-</section>
-        <section class="grid md:grid-cols-2 gap-12">
-            <div>
-                <h2 class="text-2xl font-bold mb-8 flex items-center"><i class="fa-solid fa-briefcase text-blue-600 mr-3"></i> Experience</h2>
-                <div class="space-y-8 border-l-2 border-gray-200 dark:border-slate-700 pl-6 ml-2">
-                    <div class="relative">
-                        <div class="absolute -left-[31px] top-1 w-4 h-4 bg-blue-600 rounded-full border-4 border-white dark:border-slate-900 shadow-sm"></div>
-                        <h3 class="font-bold">Associate Manager</h3>
-                        <p class="text-sm text-blue-600 font-medium">Publicis Media • Oct 2024 - Present </p>
-                    </div>
-                    <div class="relative">
-                        <div class="absolute -left-[31px] top-1 w-4 h-4 bg-gray-400 rounded-full border-4 border-white dark:border-slate-900 shadow-sm"></div>
-                        <h3 class="font-bold text-gray-400">Analyst</h3>
-                        <p class="text-sm text-gray-400 font-medium">Publicis Media • 2022 - 2024 </p>
-                         </div>
-                    <div class="relative">
-                        <div class="absolute -left-[31px] top-1 w-4 h-4 bg-gray-400 rounded-full border-4 border-white dark:border-slate-900 shadow-sm"></div>
-                        <h3 class="font-bold text-gray-400">Marketing Associate</h3>
-                        <p class="text-sm text-gray-400 font-medium">Welgate Organics • 2020 - 2021 </p>
-                    </div>
+    <section id="services" class="max-w-6xl mx-auto px-6 py-20">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+            
+            <div class="md:col-span-8 glass-card p-10 rounded-[2.5rem] relative overflow-hidden group">
+                <div class="relative z-10">
+                    <h3 class="text-3xl font-bold mb-4">Zero-Hosting Portfolios</h3>
+                    <p class="text-slate-600 dark:text-slate-400 max-w-md">I build permanent, blazing-fast websites using GitHub Pages. You own the code. No monthly subscriptions, ever.</p>
+                    <ul class="mt-6 space-y-2 font-semibold text-sm">
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i> Custom Domain Support</li>
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i> Dark Mode Included</li>
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i> SEO Optimized</li>
+                    </ul>
                 </div>
+                <i class="fa-solid fa-code absolute -right-10 -bottom-10 text-[12rem] text-slate-200 dark:text-slate-800 opacity-20 group-hover:rotate-12 transition-transform duration-500"></i>
             </div>
 
-         <div>
-    <h2 class="text-2xl font-bold mb-8 flex items-center dark:text-white">
-        <i class="fa-solid fa-graduation-cap text-blue-600 mr-3"></i> Education
-    </h2>
-    <div class="space-y-8 border-l-2 border-gray-200 dark:border-slate-700 pl-6 ml-2">
-        
-        <div class="relative">
-            <div class="absolute -left-[31px] top-1 w-4 h-4 bg-blue-600 rounded-full border-4 border-white dark:border-slate-900 shadow-sm"></div>
-            <h3 class="font-bold text-gray-900 dark:text-white">Master of Business Administration (MBA)</h3>
-            <p class="text-sm text-blue-600 dark:text-blue-400 font-medium leading-tight">SVKM's NMIMS School of Business Management</p>
-            <p class="text-xs text-gray-500 dark:text-gray-400 mt-1 uppercase tracking-wide font-semibold">2026 — 2028</p>
-        </div>
-
-        <div class="relative">
-            <div class="absolute -left-[31px] top-1 w-4 h-4 bg-gray-400 rounded-full border-4 border-white dark:border-slate-900 shadow-sm"></div>
-            <h3 class="font-bold text-gray-700 dark:text-gray-300">B.Tech in Petroleum Engineering</h3>
-            <p class="text-sm text-gray-500 dark:text-gray-400 font-medium leading-tight">Excel College of Engineering and Technology</p>
-            <p class="text-xs text-gray-400 dark:text-gray-500 mt-1 uppercase tracking-wide font-semibold">2015 — 2019</p>
-        </div>
-        
-    </div>
-</div>
-        </section>
-
-        <section>
-            <h2 class="text-2xl font-bold mb-8 flex items-center"><i class="fa-solid fa-certificate text-yellow-500 mr-3"></i> Certifications</h2>
-            <div class="flex flex-wrap gap-3">
-                <span class="bg-white dark:bg-slate-800 px-4 py-2 rounded-lg border border-gray-100 dark:border-slate-700 text-sm font-semibold shadow-sm">Meta Media Buying Professional </span>
-                <span class="bg-white dark:bg-slate-800 px-4 py-2 rounded-lg border border-gray-100 dark:border-slate-700 text-sm font-semibold shadow-sm">MICA Digital Marketing Bootcamp </span>
-                <span class="bg-white dark:bg-slate-800 px-4 py-2 rounded-lg border border-gray-100 dark:border-slate-700 text-sm font-semibold shadow-sm">Google Project Management </span>
-            </div>
-        </section>
-
-        <section class="bg-gradient-to-br from-blue-600 to-blue-800 rounded-[2rem] p-10 text-white text-center shadow-2xl relative overflow-hidden">
-            <h2 class="text-3xl font-bold mb-4">Let's Collaborate</h2>
-            <p class="mb-10 opacity-90 max-w-md mx-auto">Open to high-impact marketing opportunities and strategic discussions.</p>
-            <div class="flex flex-wrap justify-center gap-4 relative z-10">
-                <a href="mailto:sreeharia04@gmail.com" class="bg-white text-blue-600 px-8 py-3.5 rounded-full font-bold hover:bg-gray-100 transition shadow-md">
-                    <i class="fa-solid fa-envelope mr-2"></i> Email Me
-                </a>
-                <a href="https://wa.me/917560803013" target="_blank" class="bg-[#25D366] text-white px-8 py-3.5 rounded-full font-bold hover:bg-opacity-90 transition shadow-md">
-                    <i class="fa-brands fa-whatsapp mr-2"></i> WhatsApp
-                </a>
-            </div>
-            <div class="absolute top-0 right-0 w-64 h-64 bg-white opacity-5 rounded-full -mr-20 -mt-20"></div>
-        </section>
-    </main>
-
-    <footer class="py-12 border-t border-gray-200 dark:border-slate-800 text-center space-y-6">
-    <p class="text-gray-900 dark:text-white font-semibold text-sm">
-        &copy; 2026 Sreehari A • Digital Marketing Professional
-    </p>
-    
-    <div class="max-w-sm mx-auto p-6 rounded-[2rem] bg-gradient-to-br from-blue-50 to-white dark:from-slate-900 dark:to-slate-800 border border-blue-100 dark:border-blue-900/30 shadow-sm">
-        <p class="text-[11px] text-blue-800 dark:text-blue-300 leading-relaxed uppercase tracking-widest font-bold mb-2">
-            <i class="fa-solid fa-microchip mr-1"></i> AI-Engineered Solutions
-        </p>
-        <p class="text-xs text-gray-700 dark:text-gray-400 leading-relaxed">
-Stop paying monthly hosting subscriptions. I build <strong>permanent portfolios</strong> that you own for life.            <span class="block mt-3">
-                <a href="https://wa.me/917560803013?text=Hi%20Sreehari,%20I%20want%20to%20know%20more%20about%20your%20zero-hosting-fee%20portfolios!" 
-                   target="_blank" 
-                   class="inline-block bg-blue-600 text-white px-4 py-2 rounded-full font-bold hover:bg-blue-700 transition-all shadow-md">
-                   Get Your Own
-                </a>
-            </span>
-        </p>
-    </div>
-</footer>
-
-    <script>
-        const themeToggleBtn = document.getElementById('theme-toggle');
-        const themeToggleIcon = document.getElementById('theme-toggle-icon');
-
-        if (document.documentElement.classList.contains('dark')) {
-            themeToggleIcon.classList.replace('fa-moon', 'fa-sun');
-        }
-
-        themeToggleBtn.addEventListener('click', () => {
-            document.documentElement.classList.toggle('dark');
-            if (document.documentElement.classList.contains('dark')) {
-                themeToggleIcon.classList.replace('fa-moon', 'fa-sun');
-                localStorage.setItem('theme', 'dark');
-            } else {
-                themeToggleIcon.classList.replace('fa-sun', 'fa-moon');
-                localStorage.setItem('theme', 'light');
-            }
-        });
-    </script>
-</body>
-</html>
+            <div class="md:col-span-4 bg-blue-600 p-10 rounded-[2.5rem] text-white">
+                <h3 class="text-2xl font-bold mb-4 text-white">Digital Strategy</h3>
+                <p class="text-blue-100 text-sm leading-relaxed">Leveraging experience from <strong>$200M portfolios</strong> to help your brand scale efficiently.</p>
+                <div class="mt-8 pt-8 border-t border-blue-400/30">
+                    <p class="text-xs font-bold uppercase tracking-widest opacity-70">Focus Areas</p>
+                    <p class="mt-2 font-bold uppercase">ROI Optimization</p>
+                    <p class="mt-1 font-bold uppercase">Funnel Analytics</p>
+                </div>
