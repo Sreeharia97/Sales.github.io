@@ -205,6 +205,81 @@
                 <div class="flex gap-8"><div><p class="text-3xl font-black text-blue-600">$200M+</p></div><div><p class="text-3xl font-black text-blue-600">80%</p></div></div>
             </div>
         </div>
+        <section id="faq" class="max-w-4xl mx-auto px-6 py-24 border-t border-white/5">
+        <div class="text-center mb-16">
+            <span class="text-blue-500 font-bold uppercase tracking-widest text-[10px]">Transparency</span>
+            <h2 class="text-3xl md:text-5xl font-extrabold mt-2 text-white">Common Doubts, <span class="gradient-text">Simple Answers.</span></h2>
+        </div>
+
+        <div class="space-y-4">
+            <div class="glass-card rounded-2xl overflow-hidden border-white/10">
+                <button onclick="toggleFaq(1)" class="w-full p-6 text-left flex justify-between items-center hover:bg-white/5 transition-all">
+                    <span class="font-bold text-slate-200 text-sm md:text-base">How is it possible to have zero monthly hosting fees?</span>
+                    <i id="faq-icon-1" class="fa-solid fa-plus text-blue-500 transition-transform duration-300"></i>
+                </button>
+                <div id="faq-ans-1" class="hidden px-6 pb-6 text-slate-400 text-sm leading-relaxed border-t border-white/5 pt-4">
+                    Most platforms charge you "rent" for their easy editor. I build your site using professional-grade code and deploy it on <strong>GitHub’s global infrastructure</strong>. This is the same system used by the world's top developers. They provide the hosting for free, and I pass those massive savings directly to you.
+                </div>
+            </div>
+
+            <div class="glass-card rounded-2xl overflow-hidden border-white/10">
+                <button onclick="toggleFaq(2)" class="w-full p-6 text-left flex justify-between items-center hover:bg-white/5 transition-all">
+                    <span class="font-bold text-slate-200 text-sm md:text-base">Is a "free-hosted" site slow or low quality?</span>
+                    <i id="faq-icon-2" class="fa-solid fa-plus text-blue-500 transition-transform duration-300"></i>
+                </button>
+                <div id="faq-ans-2" class="hidden px-6 pb-6 text-slate-400 text-sm leading-relaxed border-t border-white/5 pt-4">
+                    Actually, it’s the opposite. Because your site is built with clean, "raw" code instead of bulky themes and plugins, it loads almost instantly. Google and recruiters love fast sites. You get better performance than a paid platform, for free.
+                </div>
+            </div>
+
+            <div class="glass-card rounded-2xl overflow-hidden border-white/10">
+                <button onclick="toggleFaq(3)" class="w-full p-6 text-left flex justify-between items-center hover:bg-white/5 transition-all">
+                    <span class="font-bold text-slate-200 text-sm md:text-base">Do I really own the website 100%?</span>
+                    <i id="faq-icon-3" class="fa-solid fa-plus text-blue-500 transition-transform duration-300"></i>
+                </button>
+                <div id="faq-ans-3" class="hidden px-6 pb-6 text-slate-400 text-sm leading-relaxed border-t border-white/5 pt-4">
+                    Yes. On other platforms, you are "renting" your site; if you stop paying, they delete it. With me, you own the "land" and the "building." I give you the source code. You can move it, change it, or keep it forever.
+                </div>
+            </div>
+
+            <div class="glass-card rounded-2xl overflow-hidden border-white/10">
+                <button onclick="toggleFaq(4)" class="w-full p-6 text-left flex justify-between items-center hover:bg-white/5 transition-all">
+                    <span class="font-bold text-slate-200 text-sm md:text-base">Can I use my own name (like .com or .ae)?</span>
+                    <i id="faq-icon-4" class="fa-solid fa-plus text-blue-500 transition-transform duration-300"></i>
+                </button>
+                <div id="faq-ans-4" class="hidden px-6 pb-6 text-slate-400 text-sm leading-relaxed border-t border-white/5 pt-4">
+                    Absolutely. I handle the technical "handshake" between your domain name (like yourname.com) and the new site. If you don't have a domain yet, I’ll show you exactly where to buy one for the best price.
+                </div>
+            </div>
+
+            <div class="glass-card rounded-2xl overflow-hidden border-white/10">
+                <button onclick="toggleFaq(5)" class="w-full p-6 text-left flex justify-between items-center hover:bg-white/5 transition-all">
+                    <span class="font-bold text-slate-200 text-sm md:text-base">Is this only for portfolios, or business sites too?</span>
+                    <i id="faq-icon-5" class="fa-solid fa-plus text-blue-500 transition-transform duration-300"></i>
+                </button>
+                <div id="faq-ans-5" class="hidden px-6 pb-6 text-slate-400 text-sm leading-relaxed border-t border-white/5 pt-4">
+                    This infrastructure is for anyone who wants a high-performance presence. Whether you are an executive building a personal brand, a consultant needing a landing page, or a small business wanting a professional storefront—the "Permanent Asset" model works for all.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function toggleFaq(id) {
+            const ans = document.getElementById(`faq-ans-${id}`);
+            const icon = document.getElementById(`faq-icon-${id}`);
+            
+            // Toggle Visibility
+            if (ans.classList.contains('hidden')) {
+                ans.classList.replace('hidden', 'block');
+                icon.style.transform = 'rotate(45deg)';
+            } else {
+                ans.classList.replace('block', 'hidden');
+                icon.style.transform = 'rotate(0deg)';
+            }
+        }
+        // ... (Keep the rest of your existing functions like scrollWork, openLeadForm, etc.)
+    </script>
     </section>
 
     <footer class="py-16 text-center border-t border-white/5 px-6">
