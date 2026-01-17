@@ -17,11 +17,7 @@
         .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
         .hover-card { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
         .hover-card:hover { transform: translateY(-8px); }
-        @keyframes pulse {
-            0% { transform: scale(0.95); opacity: 1; }
-            50% { transform: scale(1.1); opacity: 0.7; }
-            100% { transform: scale(0.95); opacity: 1; }
-        }
+        @keyframes pulse { 0% { transform: scale(0.95); opacity: 1; } 50% { transform: scale(1.1); opacity: 0.7; } 100% { transform: scale(0.95); opacity: 1; } }
         .pulse-dot { animation: pulse 2s infinite; }
     </style>
 </head>
@@ -73,9 +69,6 @@
         <div id="work-container" class="work-scroll-container no-scrollbar">
             <div class="min-w-[85%] md:min-w-[400px] snap-center">
                 <div class="glass-card rounded-[1.5rem] overflow-hidden hover-card border-white/10 h-full relative">
-                    <div class="absolute top-4 right-4 z-10 flex items-center gap-1.5 bg-slate-900/40 backdrop-blur-md px-3 py-1 rounded-full border border-white/10 text-white">
-                        <div class="w-1.5 h-1.5 bg-teal-400 rounded-full pulse-dot"></div><span class="text-[9px] font-bold uppercase tracking-widest">Live</span>
-                    </div>
                     <div class="aspect-[16/10] bg-slate-800"><img src="https://via.placeholder.com/400x250/1e293b/ffffff?text=Asset+01" class="w-full h-full object-cover opacity-80"></div>
                     <div class="p-5 text-white"><p class="text-[9px] font-bold text-blue-400 uppercase mb-1">Executive Asset</p><h3 class="text-md font-bold">Senior Media Consultant</h3></div>
                 </div>
@@ -123,7 +116,7 @@
                         <div class="w-12 h-12 shrink-0 bg-blue-600/20 rounded-2xl flex items-center justify-center"><i class="fa-solid fa-briefcase text-blue-500"></i></div>
                         <div>
                             <h4 class="text-lg font-bold text-white mb-2">Impress Recruiters Instantly</h4>
-                            <p class="text-slate-400 text-sm leading-relaxed">Recruiters see hundreds of resumes. A custom website shows you are tech-savvy and serious about your brand. It gives you immediate authority in competitive markets like the UAE.</p>
+                            <p class="text-slate-400 text-sm leading-relaxed">Recruiters see hundreds of resumes daily. A custom-built website shows you are tech-savvy and serious about your brand. It gives you immediate authority in competitive markets like the UAE.</p>
                         </div>
                     </div>
                     <div class="flex gap-6">
@@ -137,12 +130,11 @@
             </div>
             <div class="glass-card p-8 rounded-[3rem] border-white/10">
                 <h3 class="text-2xl font-bold mb-6 text-white text-center">Your 360° Growth Stack</h3>
-                <p class="text-slate-400 text-sm text-center mb-8">Everything you need to grow your personal brand visibility.</p>
                 <div class="grid grid-cols-2 gap-4">
-                    <div class="p-4 rounded-2xl bg-white/5 text-center"><i class="fa-brands fa-instagram text-2xl text-pink-500 mb-2"></i><p class="text-[10px] font-bold text-slate-300">INSTAGRAM ADS</p></div>
-                    <div class="p-4 rounded-2xl bg-white/5 text-center"><i class="fa-brands fa-google text-2xl text-blue-400 mb-2"></i><p class="text-[10px] font-bold text-slate-300">GOOGLE ADS</p></div>
-                    <div class="p-4 rounded-2xl bg-white/5 text-center"><i class="fa-brands fa-snapchat text-2xl text-yellow-400 mb-2"></i><p class="text-[10px] font-bold text-slate-300">SNAP ADS</p></div>
-                    <div class="p-4 rounded-2xl bg-white/5 text-center"><i class="fa-solid fa-chart-simple text-2xl text-teal-400 mb-2"></i><p class="text-[10px] font-bold text-slate-300">GA4 TRACKING</p></div>
+                    <div class="p-4 rounded-2xl bg-white/5 text-center"><i class="fa-brands fa-instagram text-2xl text-pink-500 mb-2"></i><p class="text-[10px] font-bold text-slate-300 uppercase">Instagram Ads</p></div>
+                    <div class="p-4 rounded-2xl bg-white/5 text-center"><i class="fa-brands fa-google text-2xl text-blue-400 mb-2"></i><p class="text-[10px] font-bold text-slate-300 uppercase">Google Ads</p></div>
+                    <div class="p-4 rounded-2xl bg-white/5 text-center"><i class="fa-brands fa-snapchat text-2xl text-yellow-400 mb-2"></i><p class="text-[10px] font-bold text-slate-300 uppercase">Snap Ads</p></div>
+                    <div class="p-4 rounded-2xl bg-white/5 text-center"><i class="fa-solid fa-chart-simple text-2xl text-teal-400 mb-2"></i><p class="text-[10px] font-bold text-slate-300 uppercase">GA4 Tracking</p></div>
                 </div>
                 <div class="mt-8 p-4 rounded-xl bg-blue-600/10 border border-blue-600/20 text-center"><p class="text-xs text-blue-300">GA4 Tracking acts like your brand's CCTV—showing you exactly who is visiting and what they are interested in.</p></div>
             </div>
@@ -160,25 +152,34 @@
     </section>
 
     <section id="pricing" class="max-w-6xl mx-auto px-6 py-16 text-center">
-        <h2 class="text-3xl md:text-5xl font-extrabold mb-4 text-white">Investment Tiers</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-left mt-16">
+        <h2 class="text-3xl md:text-5xl font-extrabold mb-16 text-white">Investment Tiers</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
             <div class="glass-card p-10 rounded-[2.5rem] border-white/10">
                 <h3 class="text-xl font-bold mb-2 text-white">The Essential</h3>
                 <div class="text-4xl font-black my-6 text-white">₹4,999</div>
-                <ul class="space-y-4 text-sm mb-8 text-slate-400"><li><i class="fa-solid fa-check text-blue-500 mr-2"></i> Custom Managed Portfolio</li><li><i class="fa-solid fa-check text-blue-500 mr-2"></i> Permanent Infrastructure</li></ul>
+                <ul class="space-y-4 text-sm mb-8 text-slate-400 flex-grow">
+                    <li><i class="fa-solid fa-check text-blue-500 mr-2"></i> Custom Managed Portfolio</li>
+                    <li><i class="fa-solid fa-check text-blue-500 mr-2"></i> Permanent Infrastructure</li>
+                </ul>
                 <a href="https://wa.me/917560803013" class="w-full py-4 rounded-xl border border-blue-600 text-blue-500 font-bold text-center block">Get Started</a>
             </div>
-            <div class="bg-blue-600 p-10 rounded-[2.5rem] transform md:scale-105 shadow-2xl relative text-white">
+            <div class="bg-blue-600 p-10 rounded-[2.5rem] transform md:scale-105 shadow-2xl relative text-white flex flex-col">
                 <div class="absolute top-0 right-10 -translate-y-1/2 bg-teal-400 text-slate-900 text-[10px] font-black px-4 py-1 rounded-full uppercase">Top Choice</div>
                 <h3 class="text-xl font-bold mb-2">Growth Suite</h3>
                 <div class="text-4xl font-black my-6">₹9,999</div>
-                <ul class="space-y-4 text-sm mb-8"><li><i class="fa-solid fa-check text-teal-300 mr-2"></i> Everything in Essential</li><li><i class="fa-solid fa-check text-teal-300 mr-2"></i> GA4 & Tracking Setup</li></ul>
+                <ul class="space-y-4 text-sm mb-8 flex-grow">
+                    <li><i class="fa-solid fa-check text-teal-300 mr-2"></i> Everything in Essential</li>
+                    <li><i class="fa-solid fa-check text-teal-300 mr-2"></i> GA4 & Tracking Setup</li>
+                </ul>
                 <a href="https://wa.me/917560803013" class="w-full py-4 rounded-xl bg-white text-blue-600 font-bold text-center block">Start Growing</a>
             </div>
-            <div class="glass-card p-10 rounded-[2.5rem] border-white/10">
+            <div class="glass-card p-10 rounded-[2.5rem] border-white/10 flex flex-col">
                 <h3 class="text-xl font-bold mb-2 text-white">Performance Plus</h3>
                 <div class="text-4xl font-black my-6 text-white">Custom</div>
-                <ul class="space-y-4 text-sm mb-8 text-slate-400"><li><i class="fa-solid fa-check text-blue-500 mr-2"></i> Full Ads Management</li><li><i class="fa-solid fa-check text-blue-500 mr-2"></i> Monthly ROI Audits</li></ul>
+                <ul class="space-y-4 text-sm mb-8 text-slate-400 flex-grow">
+                    <li><i class="fa-solid fa-check text-blue-500 mr-2"></i> Full Ads Management</li>
+                    <li><i class="fa-solid fa-check text-blue-500 mr-2"></i> Monthly ROI Audits</li>
+                </ul>
                 <a href="https://wa.me/917560803013" class="w-full py-4 rounded-xl bg-slate-100 text-slate-900 font-bold text-center block">Contact Us</a>
             </div>
         </div>
@@ -186,65 +187,74 @@
 
     <section id="about" class="max-w-6xl mx-auto px-6 py-24 border-t border-white/5">
         <div class="grid md:grid-cols-2 gap-12 items-center text-left">
-            <img src="profile.jpg" alt="Sreehari" class="rounded-[3rem] w-full max-w-sm mx-auto grayscale border border-white/10">
+            <img src="profile.jpg" alt="Sreehari" class="rounded-[3rem] w-full max-w-sm mx-auto shadow-2xl grayscale border border-white/10">
             <div>
                 <span class="text-blue-500 font-bold uppercase tracking-widest text-xs">The Expert</span>
                 <h2 class="text-3xl font-extrabold mt-4 mb-6 text-white">Agency Standards.</h2>
-                <p class="text-slate-400 mb-6 leading-relaxed">Media Strategist at a Global Agency managing $200M+. I build high-speed, permanent digital assets that convert.</p>
-                <div class="flex gap-8"><div class="text-3xl font-black text-blue-600">$200M+</div><div class="text-3xl font-black text-blue-600">80%</div></div>
+                <p class="text-slate-400 mb-6 leading-relaxed">As a Media Strategist at a Global Agency managing $200M+, I build high-speed, permanent digital assets that convert.</p>
+                <div class="flex gap-8"><div><p class="text-3xl font-black text-blue-600">$200M+</p></div><div><p class="text-3xl font-black text-blue-600">80%</p></div></div>
             </div>
         </div>
     </section>
 
     <footer class="py-16 text-center border-t border-white/5 px-6">
-        <p class="text-slate-500 text-[10px] font-bold uppercase mb-6">&copy; 2026 Sreehari • Digital Growth Strategist</p>
-        <div class="flex justify-center gap-6 mb-8 text-[10px] font-bold uppercase text-slate-400">
-            <button onclick="toggleModal('terms')" class="hover:text-blue-400">Terms</button>
-            <button onclick="toggleModal('privacy')" class="hover:text-blue-400">Privacy</button>
-            <button onclick="toggleModal('refund')" class="hover:text-blue-400">Refunds</button>
-            <button onclick="toggleModal('domain')" class="hover:text-blue-400 text-blue-500 underline">Domain Guide</button>
+        <p class="text-slate-500 text-[10px] font-bold uppercase tracking-widest mb-6 text-slate-900">&copy; 2026 Sreehari • Digital Growth Strategist</p>
+        <div class="flex flex-wrap justify-center gap-6 mb-8 text-[10px] font-bold uppercase tracking-wider text-slate-400">
+            <button onclick="toggleModal('terms')" class="hover:text-blue-400">Terms of Service</button>
+            <button onclick="toggleModal('privacy')" class="hover:text-blue-400">Data Privacy</button>
+            <button onclick="toggleModal('refund')" class="hover:text-blue-400">Refund Policy</button>
+            <button onclick="toggleModal('domain')" class="hover:text-blue-400 text-blue-500 underline">Custom Domain Guide</button>
         </div>
     </footer>
 
     <div id="lead-form-modal" class="fixed inset-0 z-[100] hidden items-center justify-center p-4 bg-slate-950/80 backdrop-blur-md">
-        <div class="glass-card w-full max-w-lg rounded-[2.5rem] p-10 relative text-left">
+        <div class="glass-card w-full max-w-lg rounded-[2.5rem] p-10 shadow-2xl relative text-left">
             <button onclick="closeLeadForm()" class="absolute top-6 right-6 text-slate-500 hover:text-white"><i class="fa-solid fa-xmark text-xl"></i></button>
             <h2 class="text-2xl font-extrabold mb-6 text-white">Schedule Audit</h2>
             <form id="strategy-form" class="space-y-4">
-                <input type="text" id="lead-name" placeholder="Name" required class="w-full bg-slate-900 border border-white/10 rounded-xl p-4 text-white outline-none focus:border-blue-500">
-                <select id="lead-goal" class="w-full bg-slate-900 border border-white/10 rounded-xl p-4 text-slate-400 outline-none focus:border-blue-500"><option value="">Primary Goal?</option><option value="UAE Migration">UAE Migration</option><option value="Agency Scale">Agency Scale</option></select>
+                <input type="text" id="lead-name" placeholder="Your Name" required class="w-full bg-slate-900/50 border border-white/10 rounded-xl p-4 text-white outline-none focus:border-blue-500">
+                <select id="lead-goal" class="w-full bg-slate-900/50 border border-white/10 rounded-xl p-4 text-slate-400 outline-none focus:border-blue-500">
+                    <option value="">Primary Goal?</option>
+                    <option value="UAE Migration">UAE Migration Portfolio</option>
+                    <option value="Agency Scale">Agency Performance Page</option>
+                </select>
                 <button type="submit" class="w-full bg-blue-600 text-white font-bold py-4 rounded-xl">Submit Request</button>
             </form>
         </div>
     </div>
+
     <div id="legal-modal" class="fixed inset-0 z-[100] hidden items-center justify-center p-4 bg-slate-950/80 backdrop-blur-md">
-        <div class="glass-card w-full max-w-2xl max-h-[80vh] overflow-y-auto rounded-[2rem] p-10 relative text-left text-slate-300">
+        <div class="glass-card w-full max-w-2xl max-h-[80vh] overflow-y-auto rounded-[2rem] p-10 relative text-left">
             <button onclick="toggleModal()" class="absolute top-6 right-6 text-slate-500 hover:text-white"><i class="fa-solid fa-xmark text-xl"></i></button>
-            <div id="modal-content" class="prose prose-invert prose-sm"></div>
+            <div id="modal-content" class="prose prose-invert prose-sm max-w-none text-slate-300"></div>
         </div>
     </div>
 
     <script>
         const legalData = {
-            terms: `<h2>Terms</h2><p>Assets are 100% client-owned. Managed maintenance included.</p>`,
-            privacy: `<h2>Privacy</h2><p>Data used solely for GA4 performance tracking.</p>`,
-            refund: `<h2>Refunds</h2><p>100% refund available pre-audit. No refunds post-deployment.</p>`,
-            domain: `<h2>Domain Guide</h2><p>1. Buy domain. 2. Update DNS. 3. Secure & Launch.</p>`
+            terms: `<h2 class="text-2xl font-extrabold mb-4 text-white">Terms of Service</h2><div class="space-y-4 text-sm leading-relaxed"><p><strong>1. Full Ownership:</strong> You retain 100% ownership of the final deployment files. You are never locked into our platform.</p><p><strong>2. Managed Maintenance:</strong> Our service includes technical maintenance on GitHub infrastructure.</p><p><strong>3. Content Updates:</strong> Text/image updates are processed within 24-48 hours upon request.</p></div>`,
+            privacy: `<h2 class="text-2xl font-extrabold mb-4 text-white">Data Privacy Policy</h2><div class="space-y-4 text-sm leading-relaxed"><p><strong>1. Transparency:</strong> We use Google Analytics (GA4) solely for performance insights and conversion tracking.</p><p><strong>2. No Data Selling:</strong> We never share or sell your professional data with third-party advertisers.</p><p><strong>3. Security:</strong> All assets are deployed with mandatory SSL (HTTPS) encryption.</p></div>`,
+            refund: `<h2 class="text-2xl font-extrabold mb-4 text-white">Refund Policy</h2><div class="space-y-4 text-sm leading-relaxed"><p><strong>1. Strategy Phase:</strong> 100% refund available if requested within 24 hours of booking (pre-audit).</p><p><strong>2. Deployment Phase:</strong> Since we deliver custom technical assets, no refunds are issued once technical deployment has initiated.</p></div>`,
+            domain: `<h2 class="text-2xl font-extrabold mb-4 text-white">Custom Domain Guide</h2><div class="space-y-4 text-sm leading-relaxed"><p>Moving to your own name (.com or .ae) is seamless:</p><ol class="list-decimal pl-5 space-y-3"><li>Purchase your domain from any provider (GoDaddy, etc).</li><li>Provide temporary DNS access or update 'A' records as directed.</li><li>We finalize deployment and activate security certificates.</li></ol></div>`
         };
+
         function toggleModal(type) {
             const modal = document.getElementById('legal-modal');
             const content = document.getElementById('modal-content');
             if (type) { content.innerHTML = legalData[type]; modal.classList.replace('hidden', 'flex'); }
             else { modal.classList.replace('flex', 'hidden'); }
         }
+
         function openLeadForm() { document.getElementById('lead-form-modal').classList.replace('hidden', 'flex'); }
         function closeLeadForm() { document.getElementById('lead-form-modal').classList.replace('flex', 'hidden'); }
+
         document.getElementById('strategy-form').addEventListener('submit', function(e) {
             e.preventDefault();
-            const msg = `Strategy Request:%0A*Name:* ${document.getElementById('lead-name').value}%0A*Goal:* ${document.getElementById('lead-goal').value}`;
-            window.open(`https://wa.me/917560803013?text=${msg}`, '_blank');
+            const message = `Hi Sreehari, Strategy Request:%0A*Name:* ${document.getElementById('lead-name').value}%0A*Goal:* ${document.getElementById('lead-goal').value}`;
+            window.open(`https://wa.me/917560803013?text=${message}`, '_blank');
             closeLeadForm();
         });
+
         function scrollWork(direction) {
             const container = document.getElementById('work-container');
             const scrollAmount = window.innerWidth > 768 ? 424 : container.clientWidth * 0.85;
