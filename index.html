@@ -39,7 +39,7 @@
         .hover-card:hover { transform: translateY(-8px); }
         
         @media (max-width: 768px) {
-            #pricing { padding-top: 60px !important; padding-bottom: 60px !important; }
+            #pricing { padding-top: 40px !important; padding-bottom: 80px !important; }
             .pricing-card { margin-bottom: 2rem; }
         }
     </style>
@@ -68,8 +68,8 @@
         </div>
     </nav>
 
-    <section class="pt-40 md:pt-56 pb-20 px-6">
-        <div class="max-w-4xl mx-auto text-center">
+    <section class="pt-40 md:pt-52 pb-16 px-6 text-center">
+        <div class="max-w-4xl mx-auto">
             <span class="px-4 py-1.5 rounded-full bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 text-[10px] font-bold uppercase tracking-widest mb-6 inline-block">Managed Digital Assets</span>
             <h1 class="text-4xl md:text-7xl font-extrabold tracking-tight mb-8 leading-[1.1] text-slate-900 dark:text-white">
                 Build a Digital Asset, <br>
@@ -79,60 +79,63 @@
                 I build elite, high-performance portfolios that you own 100%. <br> <strong>One-time investment. Zero monthly hosting fees.</strong>
             </p>
             <div class="mt-10">
-                <a href="#work" class="bg-blue-600 text-white px-10 py-4 rounded-2xl font-bold text-lg shadow-xl hover:bg-blue-700 transition-all inline-block">See My Work</a>
+                <a href="#work" class="bg-blue-600 text-white px-10 py-4 rounded-2xl font-bold text-lg shadow-xl hover:bg-blue-700 transition-all inline-block">View Case Studies</a>
             </div>
         </div>
     </section>
 
-    <section id="work" class="max-w-6xl mx-auto px-6 py-20">
-        <div class="text-center mb-16">
-            <h2 class="text-3xl md:text-4xl font-extrabold mb-4 text-slate-900 dark:text-white">Proof of Work</h2>
-            <p class="text-slate-500 dark:text-slate-400">High-performance assets delivered to clients worldwide.</p>
+    <section id="work" class="max-w-6xl mx-auto px-6 py-12">
+        <div class="text-center mb-10">
+            <h2 class="text-3xl font-extrabold mb-3 text-slate-900 dark:text-white">Proof of Work</h2>
+            <p class="text-slate-500 dark:text-slate-400 text-sm">Real-world performance for modern professionals.</p>
         </div>
         
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div class="glass-card rounded-[2rem] overflow-hidden hover-card flex flex-col">
-                <div class="aspect-video bg-slate-200 dark:bg-slate-800 relative overflow-hidden">
-                    <div class="absolute inset-0 flex items-center justify-center text-slate-400 text-xs font-bold uppercase tracking-widest italic">Project Preview</div>
-                    <img src="https://via.placeholder.com/600x400" alt="Project 1" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity">
-                </div>
-                <div class="p-8">
-                    <div class="flex gap-2 mb-4">
-                        <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 text-[10px] font-bold rounded-full">MARKETING PORTFOLIO</span>
-                        <span class="px-3 py-1 bg-teal-100 dark:bg-teal-900/30 text-teal-600 dark:text-teal-400 text-[10px] font-bold rounded-full">TAILWIND CSS</span>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="glass-card rounded-[1.5rem] overflow-hidden hover-card flex flex-col border border-slate-200/50">
+                <div class="aspect-[16/10] bg-slate-200 dark:bg-slate-800 relative group">
+                    <img src="https://via.placeholder.com/400x250" alt="Project 1" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-blue-600/80 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                        <a href="#" class="text-white font-bold text-xs bg-slate-900/50 px-4 py-2 rounded-full backdrop-blur-md">Live Preview <i class="fa-solid fa-external-link ml-1"></i></a>
                     </div>
-                    <h3 class="text-xl font-bold mb-3 dark:text-white">The Executive Portfolio</h3>
-                    <p class="text-slate-500 dark:text-slate-400 text-sm mb-6">A sleek, dark-themed portfolio designed for a Senior Media Lead with integrated GA4 tracking.</p>
-                    <a href="#" class="inline-flex items-center text-blue-600 font-bold text-sm hover:gap-2 transition-all">
-                        View Live Project <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
-                    </a>
+                </div>
+                <div class="p-5">
+                    <p class="text-[9px] font-bold text-blue-600 uppercase tracking-tighter mb-1">Portfolio Design</p>
+                    <h3 class="text-md font-bold dark:text-white leading-tight">Executive Media Lead</h3>
                 </div>
             </div>
 
-            <div class="glass-card rounded-[2rem] overflow-hidden hover-card flex flex-col">
-                <div class="aspect-video bg-slate-200 dark:bg-slate-800 relative overflow-hidden">
-                    <div class="absolute inset-0 flex items-center justify-center text-slate-400 text-xs font-bold uppercase tracking-widest italic">Project Preview</div>
-                    <img src="https://via.placeholder.com/600x400" alt="Project 2" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity">
-                </div>
-                <div class="p-8">
-                    <div class="flex gap-2 mb-4">
-                        <span class="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400 text-[10px] font-bold rounded-full">SERVICE PAGE</span>
-                        <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 text-[10px] font-bold rounded-full">GITHUB PAGES</span>
+            <div class="glass-card rounded-[1.5rem] overflow-hidden hover-card flex flex-col border border-slate-200/50">
+                <div class="aspect-[16/10] bg-slate-200 dark:bg-slate-800 relative group">
+                    <img src="https://via.placeholder.com/400x250" alt="Project 2" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-blue-600/80 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                        <a href="#" class="text-white font-bold text-xs bg-slate-900/50 px-4 py-2 rounded-full backdrop-blur-md">Live Preview <i class="fa-solid fa-external-link ml-1"></i></a>
                     </div>
-                    <h3 class="text-xl font-bold mb-3 dark:text-white">Agency Asset Hub</h3>
-                    <p class="text-slate-500 dark:text-slate-400 text-sm mb-6">A high-conversion landing page for digital services featuring custom-coded dark mode.</p>
-                    <a href="#" class="inline-flex items-center text-blue-600 font-bold text-sm hover:gap-2 transition-all">
-                        View Live Project <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
-                    </a>
+                </div>
+                <div class="p-5">
+                    <p class="text-[9px] font-bold text-teal-600 uppercase tracking-tighter mb-1">Service Page</p>
+                    <h3 class="text-md font-bold dark:text-white leading-tight">Digital Marketing Hub</h3>
+                </div>
+            </div>
+
+            <div class="glass-card rounded-[1.5rem] overflow-hidden hover-card flex flex-col border border-slate-200/50">
+                <div class="aspect-[16/10] bg-slate-200 dark:bg-slate-800 relative group">
+                    <img src="https://via.placeholder.com/400x250" alt="Project 3" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-blue-600/80 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                        <a href="#" class="text-white font-bold text-xs bg-slate-900/50 px-4 py-2 rounded-full backdrop-blur-md">Live Preview <i class="fa-solid fa-external-link ml-1"></i></a>
+                    </div>
+                </div>
+                <div class="p-5">
+                    <p class="text-[9px] font-bold text-purple-600 uppercase tracking-tighter mb-1">Analytics Tool</p>
+                    <h3 class="text-md font-bold dark:text-white leading-tight">ROI Dashboard Asset</h3>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="pricing" class="max-w-6xl mx-auto px-6 py-20 relative">
-        <div class="text-center mb-16">
+    <section id="pricing" class="max-w-6xl mx-auto px-6 py-16 relative">
+        <div class="text-center mb-12">
             <h2 class="text-3xl md:text-4xl font-extrabold mb-4 text-slate-900 dark:text-blue-50">Transparent Pricing</h2>
-            <p class="text-slate-500 dark:text-slate-400">Managed solutions with zero "hosting tax" overhead.</p>
+            <p class="text-slate-500 dark:text-slate-400 text-sm">Managed solutions with zero "hosting tax" overhead.</p>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div class="pricing-card glass-card p-8 rounded-[2.5rem] flex flex-col hover-card">
@@ -169,7 +172,7 @@
         </div>
     </section>
 
-    <section id="about" class="max-w-6xl mx-auto px-6 py-24 border-t border-slate-200 dark:border-slate-800">
+    <section id="about" class="max-w-6xl mx-auto px-6 py-20 border-t border-slate-200 dark:border-slate-800">
         <div class="grid md:grid-cols-2 gap-16 items-center">
             <div class="relative group">
                 <img src="profile.jpg" alt="Sreehari" class="rounded-[3rem] w-full max-w-md mx-auto shadow-2xl grayscale group-hover:grayscale-0 transition-all duration-700">
@@ -178,10 +181,7 @@
                 <span class="text-blue-600 font-bold uppercase tracking-widest text-xs">The Expert behind the code</span>
                 <h2 class="text-3xl md:text-4xl font-extrabold mt-4 mb-6 leading-tight text-slate-900 dark:text-white">Enterprise Thinking. <br>Focused Execution.</h2>
                 <p class="text-slate-600 dark:text-slate-400 mb-6 leading-relaxed">
-                    As a <strong>Media Strategist at a Global Agency</strong>, I know how professional brands scale.
-                </p>
-                <p class="text-slate-600 dark:text-slate-400 mb-8 leading-relaxed">
-                    I manage digital portfolios worth over $200M for global brands. I apply those same performance frameworks to build your lightning-fast digital home.
+                    As a <strong>Media Strategist at a Global Agency</strong>, I manage digital portfolios worth over $200M. I apply those same performance frameworks to build your lightning-fast digital home.
                 </p>
                 <div class="flex gap-8">
                     <div><p class="text-3xl font-black text-blue-600">$200M+</p><p class="text-[10px] font-bold text-slate-500 uppercase">Managed</p></div>
@@ -197,19 +197,19 @@
             <div class="glass-card p-6 rounded-2xl">
                 <h4 class="font-bold mb-3 text-blue-600">"Why not just use a free AI builder?"</h4>
                 <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
-                    Wix, Framer, and others are "rental models." They charge $15–$30/month. Over 5 years, you pay over <strong>₹80,000</strong>. I build permanent assets on enterprise infrastructure with <strong>zero monthly hosting fees</strong> forever.
+                    Wix and Framer charge $15–$30/month. Over 5 years, you pay over <strong>₹80,000</strong>. I build permanent assets on enterprise infrastructure with <strong>zero monthly hosting fees</strong> forever.
                 </p>
             </div>
             <div class="glass-card p-6 rounded-2xl">
                 <h4 class="font-bold mb-3 text-blue-600">"What happens if I need an update?"</h4>
                 <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
-                    I provide <strong>Managed Digital Assets</strong>. To ensure your site remains secure, I maintain the backend. Simply message me with your update request, and I handle the deployment within 24 hours.
+                    I provide <strong>Managed Digital Assets</strong>. Simply message me with your update request, and I handle the deployment within 24 hours.
                 </p>
             </div>
         </div>
     </section>
 
-    <footer class="py-20 text-center border-t border-slate-100 dark:border-slate-800">
+    <footer class="py-16 text-center border-t border-slate-100 dark:border-slate-800">
         <p class="text-slate-400 text-[10px] font-bold uppercase tracking-widest mb-6">&copy; 2026 Sreehari • Digital Growth Strategist</p>
         <div class="flex justify-center gap-6 mb-8">
             <a href="#" class="text-slate-400 hover:text-blue-600 transition-colors"><i class="fa-brands fa-github text-xl"></i></a>
