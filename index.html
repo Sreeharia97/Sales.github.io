@@ -37,6 +37,7 @@
         .work-scroll-container {
             scroll-snap-type: x mandatory;
             scroll-behavior: smooth;
+            -webkit-overflow-scrolling: touch;
         }
         .no-scrollbar::-webkit-scrollbar { display: none; }
         .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
@@ -50,10 +51,6 @@
             100% { transform: scale(0.95); opacity: 1; }
         }
         .pulse-dot { animation: pulse 2s infinite; }
-        
-        @media (max-width: 768px) {
-            #pricing { padding-top: 40px !important; padding-bottom: 80px !important; }
-        }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-900 transition-colors duration-300">
@@ -88,7 +85,7 @@
                 <span class="gradient-text">Not a Monthly Expense.</span>
             </h1>
             <p class="text-lg md:text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto leading-relaxed">
-                One-time investment. Zero monthly hosting fees. <br> <strong>Enterprise Performance for High-Value Brands.</strong>
+                One-time investment. Zero monthly hosting fees. <br> <strong>Institutional Standards for Personal Brands.</strong>
             </p>
         </div>
     </section>
@@ -97,7 +94,7 @@
         <div class="flex justify-between items-end mb-8">
             <div>
                 <h2 class="text-3xl font-extrabold text-slate-900 dark:text-white">Digital Real Estate</h2>
-                <p class="text-slate-500 dark:text-slate-400 text-sm">A gallery of high-yield digital properties built on permanent infrastructure.</p>
+                <p class="text-slate-500 dark:text-slate-400 text-sm">A gallery of high-yield properties built on Agency Standards.</p>
             </div>
             <div class="flex gap-3">
                 <button onclick="scrollWork(-1)" class="w-10 h-10 rounded-full glass-card flex items-center justify-center border border-slate-200 dark:border-slate-700 hover:bg-blue-600 hover:text-white transition-all">
@@ -110,6 +107,7 @@
         </div>
         
         <div id="work-container" class="work-scroll-container flex gap-6 overflow-x-auto pb-10 no-scrollbar">
+            
             <div class="min-w-[85%] md:min-w-[400px] snap-center">
                 <div class="glass-card rounded-[1.5rem] overflow-hidden hover-card border border-slate-200/50 h-full relative">
                     <div class="absolute top-4 right-4 z-10 flex items-center gap-1.5 bg-slate-900/40 backdrop-blur-md px-3 py-1 rounded-full border border-white/10">
@@ -121,7 +119,7 @@
                     </div>
                     <div class="p-5">
                         <p class="text-[9px] font-bold text-blue-600 uppercase mb-1">Executive Asset</p>
-                        <h3 class="text-md font-bold dark:text-white">Senior Media Consultant Portfolio</h3>
+                        <h3 class="text-md font-bold dark:text-white text-slate-900">Senior Media Consultant Portfolio</h3>
                     </div>
                 </div>
             </div>
@@ -137,7 +135,7 @@
                     </div>
                     <div class="p-5">
                         <p class="text-[9px] font-bold text-teal-600 uppercase mb-1">Revenue Engine</p>
-                        <h3 class="text-md font-bold dark:text-white">Premium Direct Storefront</h3>
+                        <h3 class="text-md font-bold dark:text-white text-slate-900">Premium Direct Storefront</h3>
                     </div>
                 </div>
             </div>
@@ -153,95 +151,61 @@
                     </div>
                     <div class="p-5">
                         <p class="text-[9px] font-bold text-purple-600 uppercase mb-1">Growth Hub</p>
-                        <h3 class="text-md font-bold dark:text-white">Global Agency Network Asset</h3>
+                        <h3 class="text-md font-bold dark:text-white text-slate-900">Agency Network Infrastructure</h3>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <section id="testimonials" class="max-w-6xl mx-auto px-6 py-12">
-        <div class="text-center mb-10">
-            <span class="text-blue-600 font-bold uppercase tracking-widest text-[10px]">What Clients Say</span>
-            <h2 class="text-3xl font-extrabold mt-2 text-slate-900 dark:text-white">Trusted by Professionals</h2>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div class="glass-card p-6 rounded-3xl border border-slate-200/50">
-                <div class="flex text-yellow-400 mb-4 text-[10px]"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-                <p class="text-sm text-slate-600 dark:text-slate-400 italic mb-4">"Zero hosting fees is a reality. Sreehari built a permanent asset for my brand."</p>
-                <p class="font-bold text-xs dark:text-white">Arjun S. • Director</p>
-            </div>
-            <div class="glass-card p-6 rounded-3xl border border-slate-200/50">
-                <div class="flex text-yellow-400 mb-4 text-[10px]"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-                <p class="text-sm text-slate-600 dark:text-slate-400 italic mb-4">"Enterprise speed for a boutique budget. Highly recommended for professionals."</p>
-                <p class="font-bold text-xs dark:text-white">Rohan P. • Consultant</p>
-            </div>
-            <div class="glass-card p-6 rounded-3xl border border-slate-200/50">
-                <div class="flex text-yellow-400 mb-4 text-[10px]"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-                <p class="text-sm text-slate-600 dark:text-slate-400 italic mb-4">"GA4 tracking integration was flawless. Finally, data I can actually use."</p>
-                <p class="font-bold text-xs dark:text-white">Meera K. • Agency Owner</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="pricing" class="max-w-6xl mx-auto px-6 py-16">
-        <div class="text-center mb-12">
-            <h2 class="text-3xl md:text-4xl font-extrabold mb-4 text-slate-900 dark:text-blue-50">Transparent Pricing</h2>
-            <p class="text-slate-500 dark:text-slate-400 text-sm">Managed solutions with zero monthly overhead.</p>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div class="pricing-card glass-card p-8 rounded-[2.5rem] hover-card">
-                <h3 class="text-xl font-bold mb-2">The Essential</h3>
-                <div class="text-4xl font-black my-6">₹4,999</div>
-                <ul class="space-y-4 text-sm mb-8 text-slate-600 dark:text-slate-400 text-left">
-                    <li><i class="fa-solid fa-check text-blue-600 mr-2"></i> Custom Managed Portfolio</li>
-                    <li><i class="fa-solid fa-check text-blue-600 mr-2"></i> Permanent Infrastructure</li>
-                </ul>
-                <a href="https://wa.me/917560803013" class="w-full py-3 rounded-xl border border-blue-600 text-blue-600 font-bold text-center block hover:bg-blue-600 hover:text-white transition-all">Get Started</a>
-            </div>
-            <div class="pricing-card bg-slate-900 dark:bg-blue-600 p-8 rounded-[2.5rem] transform md:scale-105 shadow-2xl text-white relative">
-                <div class="absolute top-0 right-10 -translate-y-1/2 bg-teal-400 text-slate-900 text-[10px] font-black px-4 py-1 rounded-full uppercase">Most Selected</div>
-                <h3 class="text-xl font-bold mb-2">Growth Suite</h3>
-                <div class="text-4xl font-black my-6">₹9,999</div>
-                <ul class="space-y-4 text-sm mb-8 text-blue-50 text-left">
-                    <li><i class="fa-solid fa-check text-teal-300 mr-2"></i> Everything in Essential</li>
-                    <li><i class="fa-solid fa-check text-teal-300 mr-2"></i> GA4 & Tracking Setup</li>
-                </ul>
-                <a href="https://wa.me/917560803013" class="w-full py-3 rounded-xl bg-white text-blue-600 font-bold text-center block">Start Growing</a>
-            </div>
-            <div class="pricing-card glass-card p-8 rounded-[2.5rem] hover-card">
-                <h3 class="text-xl font-bold mb-2">Performance Plus</h3>
-                <div class="text-4xl font-black my-6">Custom</div>
-                <ul class="space-y-4 text-sm mb-8 text-slate-600 dark:text-slate-400 text-left">
-                    <li><i class="fa-solid fa-check text-blue-600 mr-2"></i> Full Ads Management</li>
-                    <li><i class="fa-solid fa-check text-blue-600 mr-2"></i> Scale-Up Strategy</li>
-                </ul>
-                <a href="https://wa.me/917560803013" class="w-full py-3 rounded-xl bg-slate-900 dark:bg-slate-100 text-white dark:text-slate-900 font-bold text-center block shadow-lg">Contact Us</a>
-            </div>
-        </div>
-    </section>
-
-    <section id="about" class="max-w-6xl mx-auto px-6 py-20 border-t border-slate-200 dark:border-slate-800">
-        <div class="grid md:grid-cols-2 gap-12 items-center">
-            <img src="profile.jpg" alt="Sreehari" class="rounded-[3rem] w-full max-w-sm mx-auto shadow-2xl grayscale">
-            <div>
-                <span class="text-blue-600 font-bold uppercase tracking-widest text-xs">The Expert</span>
-                <h2 class="text-3xl font-extrabold mt-4 mb-6 dark:text-white text-slate-900">Enterprise Standards.</h2>
-                <p class="text-slate-600 dark:text-slate-400 mb-6 leading-relaxed">
-                    As a Media Strategist at a Global Agency managing $200M+, I understand performance. I build high-speed, permanent digital assets that convert.
-                </p>
-                <div class="flex gap-8">
-                    <div><p class="text-3xl font-black text-blue-600">$200M+</p><p class="text-[10px] font-bold text-slate-500 uppercase">Managed</p></div>
-                    <div><p class="text-3xl font-black text-blue-600">80%</p><p class="text-[10px] font-bold text-slate-500 uppercase">Growth</p></div>
+            <div class="min-w-[85%] md:min-w-[400px] snap-center">
+                <div class="glass-card rounded-[1.5rem] overflow-hidden hover-card border border-slate-200/50 h-full relative">
+                    <div class="absolute top-4 right-4 z-10 flex items-center gap-1.5 bg-slate-900/40 backdrop-blur-md px-3 py-1 rounded-full border border-white/10 text-white">
+                        <div class="w-1.5 h-1.5 bg-teal-400 rounded-full pulse-dot"></div>
+                        <span class="text-[9px] font-bold uppercase tracking-widest">Live</span>
+                    </div>
+                    <div class="aspect-[16/10] bg-slate-800 relative group">
+                        <img src="https://via.placeholder.com/400x250" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity">
+                    </div>
+                    <div class="p-5">
+                        <p class="text-[9px] font-bold text-orange-600 uppercase mb-1">Performance Asset</p>
+                        <h3 class="text-md font-bold dark:text-white text-slate-900">E-learning Conversion Page</h3>
+                    </div>
                 </div>
             </div>
+
+            <div class="min-w-[85%] md:min-w-[400px] snap-center">
+                <div class="glass-card rounded-[1.5rem] overflow-hidden hover-card border border-slate-200/50 h-full relative">
+                    <div class="absolute top-4 right-4 z-10 flex items-center gap-1.5 bg-slate-900/40 backdrop-blur-md px-3 py-1 rounded-full border border-white/10 text-white">
+                        <div class="w-1.5 h-1.5 bg-teal-400 rounded-full pulse-dot"></div>
+                        <span class="text-[9px] font-bold uppercase tracking-widest">Live</span>
+                    </div>
+                    <div class="aspect-[16/10] bg-slate-800 relative group">
+                        <img src="https://via.placeholder.com/400x250" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity">
+                    </div>
+                    <div class="p-5">
+                        <p class="text-[9px] font-bold text-indigo-600 uppercase mb-1">Corporate Engine</p>
+                        <h3 class="text-md font-bold dark:text-white text-slate-900">B2B SaaS Landing Page</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="min-w-[85%] md:min-w-[400px] snap-center">
+                <div class="glass-card rounded-[1.5rem] overflow-hidden hover-card border border-slate-200/50 h-full relative text-white">
+                    <div class="absolute top-4 right-4 z-10 flex items-center gap-1.5 bg-slate-900/40 backdrop-blur-md px-3 py-1 rounded-full border border-white/10">
+                        <div class="w-1.5 h-1.5 bg-teal-400 rounded-full pulse-dot"></div>
+                        <span class="text-[9px] font-bold uppercase tracking-widest">Live</span>
+                    </div>
+                    <div class="aspect-[16/10] bg-slate-800 relative group">
+                        <img src="https://via.placeholder.com/400x250" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity">
+                    </div>
+                    <div class="p-5 text-slate-900">
+                        <p class="text-[9px] font-bold text-rose-600 uppercase mb-1">Global Asset</p>
+                        <h3 class="text-md font-bold dark:text-white">Luxury Travel Portfolio</h3>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
-
-    <footer class="py-16 text-center border-t border-slate-100 dark:border-slate-800">
-        <p class="text-slate-400 text-[10px] font-bold uppercase tracking-widest mb-6">&copy; 2026 Sreehari • Digital Growth Strategist</p>
-        <a href="https://wa.me/917560803013" class="bg-slate-900 dark:bg-blue-600 text-white px-8 py-3 rounded-xl font-bold">Contact Strategist</a>
-    </footer>
 
     <script>
         const themeToggleBtn = document.getElementById('theme-toggle');
@@ -255,7 +219,9 @@
 
         function scrollWork(direction) {
             const container = document.getElementById('work-container');
-            const scrollAmount = container.clientWidth * 0.8;
+            // We scroll by the width of one card + the gap (400px + 24px gap)
+            // On mobile, container.clientWidth * 0.85 works well too
+            const scrollAmount = window.innerWidth > 768 ? 424 : container.clientWidth * 0.85;
             container.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
         }
     </script>
