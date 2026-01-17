@@ -39,8 +39,8 @@
         .hover-card:hover { transform: translateY(-8px); }
         
         @media (max-width: 768px) {
-            #pricing { padding-top: 60px !important; padding-bottom: 120px !important; }
-            .pricing-card { margin-bottom: 3.5rem; }
+            #pricing { padding-top: 60px !important; padding-bottom: 60px !important; }
+            .pricing-card { margin-bottom: 2rem; }
         }
     </style>
 </head>
@@ -54,7 +54,7 @@
                 </div>
             </div>
             <div class="flex items-center gap-4 md:gap-8 px-2 overflow-x-auto no-scrollbar">
-                <a href="#services" class="text-[10px] md:text-sm font-bold uppercase tracking-wider text-slate-600 dark:text-slate-300 hover:text-blue-600 transition-colors whitespace-nowrap">Services</a>
+                <a href="#work" class="text-[10px] md:text-sm font-bold uppercase tracking-wider text-slate-600 dark:text-slate-300 hover:text-blue-600 transition-colors whitespace-nowrap">Proof of Work</a>
                 <a href="#pricing" class="text-[10px] md:text-sm font-bold uppercase tracking-wider text-slate-600 dark:text-slate-300 hover:text-blue-600 transition-colors whitespace-nowrap">Pricing</a>
                 <a href="#about" class="text-[10px] md:text-sm font-bold uppercase tracking-wider text-slate-600 dark:text-slate-300 hover:text-blue-600 transition-colors whitespace-nowrap">Expertise</a>
                 <a href="#faq" class="text-[10px] md:text-sm font-bold uppercase tracking-wider text-slate-600 dark:text-slate-300 hover:text-blue-600 transition-colors whitespace-nowrap">FAQ</a>
@@ -63,7 +63,7 @@
                 <button id="theme-toggle" class="p-2 text-slate-500 dark:text-yellow-400">
                     <i id="theme-toggle-icon" class="fa-solid fa-moon"></i>
                 </button>
-                <a href="https://wa.me/917560803013?text=Hi%20Sreehari%2C%20I'm%20reaching%20out%20from%20your%20website.%20I'd%20like%20to%20discuss%20a%20project." class="bg-blue-600 text-white px-4 md:px-6 py-2 rounded-xl text-[10px] md:text-sm font-bold shadow-lg transition-all active:scale-95 whitespace-nowrap">Let's Talk</a>
+                <a href="https://wa.me/917560803013?text=Hi%20Sreehari%2C%20I'm%20reaching%20out%20from%20your%20website." class="bg-blue-600 text-white px-4 md:px-6 py-2 rounded-xl text-[10px] md:text-sm font-bold shadow-lg transition-all active:scale-95 whitespace-nowrap">Let's Talk</a>
             </div>
         </div>
     </nav>
@@ -79,14 +79,59 @@
                 I build elite, high-performance portfolios that you own 100%. <br> <strong>One-time investment. Zero monthly hosting fees.</strong>
             </p>
             <div class="mt-10">
-                <a href="#pricing" class="bg-blue-600 text-white px-10 py-4 rounded-2xl font-bold text-lg shadow-xl hover:bg-blue-700 transition-all inline-block">View Packages</a>
+                <a href="#work" class="bg-blue-600 text-white px-10 py-4 rounded-2xl font-bold text-lg shadow-xl hover:bg-blue-700 transition-all inline-block">See My Work</a>
             </div>
         </div>
     </section>
 
-    <section id="pricing" class="max-w-6xl mx-auto px-6 py-20 overflow-visible relative">
-        <div class="text-center mb-16 relative z-10">
-            <h2 class="text-3xl md:text-4xl font-extrabold mb-4 text-slate-900 dark:text-blue-50 drop-shadow-sm">Transparent Pricing</h2>
+    <section id="work" class="max-w-6xl mx-auto px-6 py-20">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-extrabold mb-4 text-slate-900 dark:text-white">Proof of Work</h2>
+            <p class="text-slate-500 dark:text-slate-400">High-performance assets delivered to clients worldwide.</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="glass-card rounded-[2rem] overflow-hidden hover-card flex flex-col">
+                <div class="aspect-video bg-slate-200 dark:bg-slate-800 relative overflow-hidden">
+                    <div class="absolute inset-0 flex items-center justify-center text-slate-400 text-xs font-bold uppercase tracking-widest italic">Project Preview</div>
+                    <img src="https://via.placeholder.com/600x400" alt="Project 1" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity">
+                </div>
+                <div class="p-8">
+                    <div class="flex gap-2 mb-4">
+                        <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 text-[10px] font-bold rounded-full">MARKETING PORTFOLIO</span>
+                        <span class="px-3 py-1 bg-teal-100 dark:bg-teal-900/30 text-teal-600 dark:text-teal-400 text-[10px] font-bold rounded-full">TAILWIND CSS</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 dark:text-white">The Executive Portfolio</h3>
+                    <p class="text-slate-500 dark:text-slate-400 text-sm mb-6">A sleek, dark-themed portfolio designed for a Senior Media Lead with integrated GA4 tracking.</p>
+                    <a href="#" class="inline-flex items-center text-blue-600 font-bold text-sm hover:gap-2 transition-all">
+                        View Live Project <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="glass-card rounded-[2rem] overflow-hidden hover-card flex flex-col">
+                <div class="aspect-video bg-slate-200 dark:bg-slate-800 relative overflow-hidden">
+                    <div class="absolute inset-0 flex items-center justify-center text-slate-400 text-xs font-bold uppercase tracking-widest italic">Project Preview</div>
+                    <img src="https://via.placeholder.com/600x400" alt="Project 2" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity">
+                </div>
+                <div class="p-8">
+                    <div class="flex gap-2 mb-4">
+                        <span class="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400 text-[10px] font-bold rounded-full">SERVICE PAGE</span>
+                        <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 text-[10px] font-bold rounded-full">GITHUB PAGES</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 dark:text-white">Agency Asset Hub</h3>
+                    <p class="text-slate-500 dark:text-slate-400 text-sm mb-6">A high-conversion landing page for digital services featuring custom-coded dark mode.</p>
+                    <a href="#" class="inline-flex items-center text-blue-600 font-bold text-sm hover:gap-2 transition-all">
+                        View Live Project <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="max-w-6xl mx-auto px-6 py-20 relative">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-extrabold mb-4 text-slate-900 dark:text-blue-50">Transparent Pricing</h2>
             <p class="text-slate-500 dark:text-slate-400">Managed solutions with zero "hosting tax" overhead.</p>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -98,7 +143,7 @@
                     <li><i class="fa-solid fa-check text-blue-600 mr-2"></i> Permanent Infrastructure</li>
                     <li><i class="fa-solid fa-check text-blue-600 mr-2"></i> Technical Maintenance</li>
                 </ul>
-                <a href="https://wa.me/917560803013?text=Hi%20Sreehari%2C%20I%20am%20interested%20in%20the%20Essential%20Package%20for%204999." class="w-full py-3 rounded-xl border border-blue-600 text-blue-600 font-bold text-center hover:bg-blue-600 hover:text-white transition-all">Get Started</a>
+                <a href="https://wa.me/917560803013?text=Hi%20Sreehari%2C%20I%20am%20interested%20in%20the%20Essential%20Package." class="w-full py-3 rounded-xl border border-blue-600 text-blue-600 font-bold text-center hover:bg-blue-600 hover:text-white transition-all">Get Started</a>
             </div>
             <div class="pricing-card bg-slate-900 dark:bg-blue-600 p-8 rounded-[2.5rem] flex flex-col transform md:scale-105 shadow-2xl text-white relative border border-white/10">
                 <div class="absolute top-0 right-10 -translate-y-1/2 bg-teal-400 text-slate-900 text-[10px] font-black px-4 py-1 rounded-full uppercase">Most Selected</div>
@@ -109,7 +154,7 @@
                     <li><i class="fa-solid fa-check text-teal-300 mr-2"></i> GA4 & Tracking Setup</li>
                     <li><i class="fa-solid fa-check text-teal-300 mr-2"></i> Priority Support Retainer</li>
                 </ul>
-                <a href="https://wa.me/917560803013?text=Hi%20Sreehari%2C%20I%20am%20interested%20in%20the%20Growth%20Suite%20Package%20for%209999." class="w-full py-3 rounded-xl bg-white text-blue-600 font-bold text-center hover:shadow-lg transition-all">Start Growing</a>
+                <a href="https://wa.me/917560803013?text=Hi%20Sreehari%2C%20I%20am%20interested%20in%20the%20Growth%20Suite%20Package." class="w-full py-3 rounded-xl bg-white text-blue-600 font-bold text-center hover:shadow-lg transition-all">Start Growing</a>
             </div>
             <div class="pricing-card glass-card p-8 rounded-[2.5rem] flex flex-col hover-card">
                 <h3 class="text-xl font-bold mb-2">Performance Plus</h3>
@@ -119,7 +164,7 @@
                     <li><i class="fa-solid fa-check text-blue-600 mr-2"></i> Monthly ROI Audits</li>
                     <li><i class="fa-solid fa-check text-blue-600 mr-2"></i> Scale-Up Strategy</li>
                 </ul>
-                <a href="https://wa.me/917560803013?text=Hi%20Sreehari%2C%20I%20would%20like%20to%20discuss%20the%20Custom%20Performance%20Plus%20package." class="w-full py-4 rounded-xl bg-slate-900 dark:bg-slate-100 text-white dark:text-slate-900 font-extrabold text-center block shadow-lg">Contact Us</a>
+                <a href="https://wa.me/917560803013?text=Hi%20Sreehari%2C%20I%20would%20like%20to%20discuss%20the%20Custom%20Package." class="w-full py-4 rounded-xl bg-slate-900 dark:bg-slate-100 text-white dark:text-slate-900 font-extrabold text-center block shadow-lg">Contact Us</a>
             </div>
         </div>
     </section>
@@ -133,7 +178,7 @@
                 <span class="text-blue-600 font-bold uppercase tracking-widest text-xs">The Expert behind the code</span>
                 <h2 class="text-3xl md:text-4xl font-extrabold mt-4 mb-6 leading-tight text-slate-900 dark:text-white">Enterprise Thinking. <br>Focused Execution.</h2>
                 <p class="text-slate-600 dark:text-slate-400 mb-6 leading-relaxed">
-                    As a <strong>Media Strategist at a Global Agency</strong> and I know how professional brands scale.
+                    As a <strong>Media Strategist at a Global Agency</strong>, I know how professional brands scale.
                 </p>
                 <p class="text-slate-600 dark:text-slate-400 mb-8 leading-relaxed">
                     I manage digital portfolios worth over $200M for global brands. I apply those same performance frameworks to build your lightning-fast digital home.
@@ -166,7 +211,11 @@
 
     <footer class="py-20 text-center border-t border-slate-100 dark:border-slate-800">
         <p class="text-slate-400 text-[10px] font-bold uppercase tracking-widest mb-6">&copy; 2026 Sreehari • Digital Growth Strategist</p>
-        <a href="https://wa.me/917560803013?text=Hi%20Sreehari%2C%20I'm%20ready%20to%20stop%20paying%20rent%20and%20own%20my%20website." class="bg-slate-900 dark:bg-blue-600 text-white px-8 py-3 rounded-xl font-bold hover:opacity-90 transition-all">Contact Strategist</a>
+        <div class="flex justify-center gap-6 mb-8">
+            <a href="#" class="text-slate-400 hover:text-blue-600 transition-colors"><i class="fa-brands fa-github text-xl"></i></a>
+            <a href="#" class="text-slate-400 hover:text-blue-600 transition-colors"><i class="fa-brands fa-linkedin text-xl"></i></a>
+        </div>
+        <a href="https://wa.me/917560803013" class="bg-slate-900 dark:bg-blue-600 text-white px-8 py-3 rounded-xl font-bold hover:opacity-90 transition-all">Contact Strategist</a>
     </footer>
 
     <script>
