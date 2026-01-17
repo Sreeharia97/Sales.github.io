@@ -37,7 +37,6 @@
         .work-scroll-container {
             scroll-snap-type: x mandatory;
             scroll-behavior: smooth;
-            -webkit-overflow-scrolling: touch;
         }
         .no-scrollbar::-webkit-scrollbar { display: none; }
         .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
@@ -51,6 +50,10 @@
             100% { transform: scale(0.95); opacity: 1; }
         }
         .pulse-dot { animation: pulse 2s infinite; }
+        
+        @media (max-width: 768px) {
+            #pricing { padding-top: 40px !important; padding-bottom: 80px !important; }
+        }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-900 transition-colors duration-300">
@@ -107,7 +110,6 @@
         </div>
         
         <div id="work-container" class="work-scroll-container flex gap-6 overflow-x-auto pb-10 no-scrollbar">
-            
             <div class="min-w-[85%] md:min-w-[400px] snap-center">
                 <div class="glass-card rounded-[1.5rem] overflow-hidden hover-card border border-slate-200/50 h-full relative">
                     <div class="absolute top-4 right-4 z-10 flex items-center gap-1.5 bg-slate-900/40 backdrop-blur-md px-3 py-1 rounded-full border border-white/10">
@@ -123,7 +125,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="min-w-[85%] md:min-w-[400px] snap-center">
                 <div class="glass-card rounded-[1.5rem] overflow-hidden hover-card border border-slate-200/50 h-full relative">
                     <div class="absolute top-4 right-4 z-10 flex items-center gap-1.5 bg-slate-900/40 backdrop-blur-md px-3 py-1 rounded-full border border-white/10">
@@ -139,7 +140,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="min-w-[85%] md:min-w-[400px] snap-center">
                 <div class="glass-card rounded-[1.5rem] overflow-hidden hover-card border border-slate-200/50 h-full relative">
                     <div class="absolute top-4 right-4 z-10 flex items-center gap-1.5 bg-slate-900/40 backdrop-blur-md px-3 py-1 rounded-full border border-white/10">
@@ -155,7 +155,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="min-w-[85%] md:min-w-[400px] snap-center">
                 <div class="glass-card rounded-[1.5rem] overflow-hidden hover-card border border-slate-200/50 h-full relative">
                     <div class="absolute top-4 right-4 z-10 flex items-center gap-1.5 bg-slate-900/40 backdrop-blur-md px-3 py-1 rounded-full border border-white/10 text-white">
@@ -171,7 +170,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="min-w-[85%] md:min-w-[400px] snap-center">
                 <div class="glass-card rounded-[1.5rem] overflow-hidden hover-card border border-slate-200/50 h-full relative">
                     <div class="absolute top-4 right-4 z-10 flex items-center gap-1.5 bg-slate-900/40 backdrop-blur-md px-3 py-1 rounded-full border border-white/10 text-white">
@@ -187,7 +185,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="min-w-[85%] md:min-w-[400px] snap-center">
                 <div class="glass-card rounded-[1.5rem] overflow-hidden hover-card border border-slate-200/50 h-full relative text-white">
                     <div class="absolute top-4 right-4 z-10 flex items-center gap-1.5 bg-slate-900/40 backdrop-blur-md px-3 py-1 rounded-full border border-white/10">
@@ -203,9 +200,91 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
+
+    <section id="testimonials" class="max-w-6xl mx-auto px-6 py-12">
+        <div class="text-center mb-10">
+            <span class="text-blue-600 font-bold uppercase tracking-widest text-[10px]">What Clients Say</span>
+            <h2 class="text-3xl font-extrabold mt-2 text-slate-900 dark:text-white">Trusted by Professionals</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="glass-card p-6 rounded-3xl border border-slate-200/50">
+                <div class="flex text-yellow-400 mb-4 text-[10px]"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <p class="text-sm text-slate-600 dark:text-slate-400 italic mb-4">"Zero hosting fees is a reality. Sreehari built a permanent asset for my brand."</p>
+                <p class="font-bold text-xs dark:text-white text-slate-900">Arjun S. • Director</p>
+            </div>
+            <div class="glass-card p-6 rounded-3xl border border-slate-200/50">
+                <div class="flex text-yellow-400 mb-4 text-[10px]"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <p class="text-sm text-slate-600 dark:text-slate-400 italic mb-4">"Agency standards for a boutique budget. Highly recommended for professionals."</p>
+                <p class="font-bold text-xs dark:text-white text-slate-900">Rohan P. • Consultant</p>
+            </div>
+            <div class="glass-card p-6 rounded-3xl border border-slate-200/50">
+                <div class="flex text-yellow-400 mb-4 text-[10px]"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <p class="text-sm text-slate-600 dark:text-slate-400 italic mb-4">"The technical setup was flawless. Finally, a site that actually converts."</p>
+                <p class="font-bold text-xs dark:text-white text-slate-900">Meera K. • Agency Owner</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="max-w-6xl mx-auto px-6 py-16">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-extrabold mb-4 text-slate-900 dark:text-blue-50">Transparent Pricing</h2>
+            <p class="text-slate-500 dark:text-slate-400 text-sm">Institutional Grade solutions with zero monthly overhead.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="pricing-card glass-card p-8 rounded-[2.5rem] hover-card">
+                <h3 class="text-xl font-bold mb-2 text-slate-900">The Essential</h3>
+                <div class="text-4xl font-black my-6 text-slate-900">₹4,999</div>
+                <ul class="space-y-4 text-sm mb-8 text-slate-600 dark:text-slate-400 text-left">
+                    <li><i class="fa-solid fa-check text-blue-600 mr-2"></i> Custom Managed Portfolio</li>
+                    <li><i class="fa-solid fa-check text-blue-600 mr-2"></i> Permanent Infrastructure</li>
+                </ul>
+                <a href="https://wa.me/917560803013" class="w-full py-3 rounded-xl border border-blue-600 text-blue-600 font-bold text-center block hover:bg-blue-600 hover:text-white transition-all">Get Started</a>
+            </div>
+            <div class="pricing-card bg-slate-900 dark:bg-blue-600 p-8 rounded-[2.5rem] transform md:scale-105 shadow-2xl text-white relative">
+                <div class="absolute top-0 right-10 -translate-y-1/2 bg-teal-400 text-slate-900 text-[10px] font-black px-4 py-1 rounded-full uppercase">Most Selected</div>
+                <h3 class="text-xl font-bold mb-2">Growth Suite</h3>
+                <div class="text-4xl font-black my-6">₹9,999</div>
+                <ul class="space-y-4 text-sm mb-8 text-blue-50 text-left">
+                    <li><i class="fa-solid fa-check text-teal-300 mr-2"></i> Everything in Essential</li>
+                    <li><i class="fa-solid fa-check text-teal-300 mr-2"></i> GA4 & Tracking Setup</li>
+                </ul>
+                <a href="https://wa.me/917560803013" class="w-full py-3 rounded-xl bg-white text-blue-600 font-bold text-center block">Start Growing</a>
+            </div>
+            <div class="pricing-card glass-card p-8 rounded-[2.5rem] hover-card">
+                <h3 class="text-xl font-bold mb-2 text-slate-900">Performance Plus</h3>
+                <div class="text-4xl font-black my-6 text-slate-900 dark:text-white">Custom</div>
+                <ul class="space-y-4 text-sm mb-8 text-slate-600 dark:text-slate-400 text-left">
+                    <li><i class="fa-solid fa-check text-blue-600 mr-2"></i> Full Ads Management</li>
+                    <li><i class="fa-solid fa-check text-blue-600 mr-2"></i> Monthly ROI Audits</li>
+                </ul>
+                <a href="https://wa.me/917560803013" class="w-full py-3 rounded-xl bg-slate-900 dark:bg-slate-100 text-white dark:text-slate-900 font-bold text-center block shadow-lg">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="max-w-6xl mx-auto px-6 py-20 border-t border-slate-200 dark:border-slate-800">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <img src="profile.jpg" alt="Sreehari" class="rounded-[3rem] w-full max-sm mx-auto shadow-2xl grayscale">
+            <div>
+                <span class="text-blue-600 font-bold uppercase tracking-widest text-xs">The Expert</span>
+                <h2 class="text-3xl font-extrabold mt-4 mb-6 dark:text-white text-slate-900">Agency Standards.</h2>
+                <p class="text-slate-600 dark:text-slate-400 mb-6 leading-relaxed">
+                    As a Media Strategist at a Global Agency managing $200M+, I understand performance. I build high-speed, permanent digital assets that convert.
+                </p>
+                <div class="flex gap-8">
+                    <div><p class="text-3xl font-black text-blue-600">$200M+</p><p class="text-[10px] font-bold text-slate-500 uppercase">Managed</p></div>
+                    <div><p class="text-3xl font-black text-blue-600">80%</p><p class="text-[10px] font-bold text-slate-500 uppercase">Growth</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-16 text-center border-t border-slate-100 dark:border-slate-800">
+        <p class="text-slate-400 text-[10px] font-bold uppercase tracking-widest mb-6 text-slate-900">&copy; 2026 Sreehari • Digital Growth Strategist</p>
+        <a href="https://wa.me/917560803013" class="bg-slate-900 dark:bg-blue-600 text-white px-8 py-3 rounded-xl font-bold">Contact Strategist</a>
+    </footer>
 
     <script>
         const themeToggleBtn = document.getElementById('theme-toggle');
@@ -219,8 +298,6 @@
 
         function scrollWork(direction) {
             const container = document.getElementById('work-container');
-            // We scroll by the width of one card + the gap (400px + 24px gap)
-            // On mobile, container.clientWidth * 0.85 works well too
             const scrollAmount = window.innerWidth > 768 ? 424 : container.clientWidth * 0.85;
             container.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
         }
